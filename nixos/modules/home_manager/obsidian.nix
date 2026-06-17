@@ -40,8 +40,6 @@ in
     # };
   };
 
-  # Home Manager is pretty good at managing dotfiles. The primary way to manage
-  # plain files is through 'home.file'.
   # home.file = {
   #   "obsidian_bookmarks" = {
   #     source = "${obsidian_path}/bookmarks.json";
@@ -64,5 +62,4 @@ in
   #     target = "${obsidian_vault}/.obsidian/templates.json";
   #   };
   # };
-
 }
