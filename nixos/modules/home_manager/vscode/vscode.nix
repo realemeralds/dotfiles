@@ -44,6 +44,8 @@
           "editor.defaultFormatter" = "jnoortheen.nix-ide";
           "editor.formatOnSave" = true;
         };
+
+        "git.openRepositoryInParentFolders" = "always";
       };
       languageSnippets.cpp = ./cpp.json;
       keybindings = ./keybindings.json;
