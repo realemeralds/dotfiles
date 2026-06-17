@@ -1,0 +1,49 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "ctime": 1780744583623,
+      "path": "0. filo/Todo List.md",
+      "title": "Todo List"
+    },
+    {
+      "type": "group",
+      "ctime": 1780755644544,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1780746024140,
+          "path": "3. Areas/Notes/Priorities 201.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1780752770588,
+          "path": "3. Areas/Notes/Systems 201.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1780755453504,
+          "path": "3. Areas/Notes/Life 201.md"
+        }
+      ],
+      "title": "101s"
+    },
+    {
+      "type": "group",
+      "ctime": 1780755679354,
+      "items": [
+        {
+          "type": "file",
+          "ctime": 1780755676912,
+          "path": "2. Projects/Indexes/CP Index.md"
+        },
+        {
+          "type": "file",
+          "ctime": 1780755667446,
+          "path": "3. Areas/Area Index.md"
+        }
+      ],
+      "title": "Indexes"
+    }
+  ]
+}

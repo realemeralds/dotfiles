@@ -1,0 +1,10 @@
+{
+  "alwaysUpdateLinks": true,
+  "attachmentFolderPath": "0. filo/Attachments",
+  "newFileLocation": "folder",
+  "newFileFolderPath": "0. filo",
+  "showUnsupportedFiles": true,
+  "trashOption": "local",
+  "promptDelete": false,
+  "spellcheck": false
+}

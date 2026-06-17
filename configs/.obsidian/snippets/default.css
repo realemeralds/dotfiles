@@ -1,0 +1,17 @@
+.markdown-preview-view ul {
+  margin-block-start: -0.7em;
+  /* margin-block-end: -0.7em; */
+}
+
+.markdown-preview-view ol {
+  margin-block-start: -0.7em;
+  /* margin-block-end: -0.7em; */
+}
+
+.markdown-preview-view p {
+  margin-block-start: 1em;
+}
+
+.cm-line:has(+ .cm-embed-block.cm-table-widget) br {
+  display: none;
+}
