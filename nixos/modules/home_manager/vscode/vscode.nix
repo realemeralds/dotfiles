@@ -1,0 +1,65 @@
+{
+  pkgs,
+  lib,
+  ...
+}:
+{
+  programs.vscode = {
+    enable = true;
+    package = pkgs.vscode;
+
+    profiles.default = {
+      enableUpdateCheck = false;
+      enableExtensionUpdateCheck = false;
+      userSettings = {
+        "explorer.sortOrder" = "type";
+        "explorer.confirmDelete" = false;
+        "update.showReleaseNotes" = false;
+        "workbench.colorTheme" = "One Monokai";
+        "workbench.editor.empty.hint" = "hidden";
+        "workbench.secondarySideBar.defaultVisibility" = "hidden";
+        "chat.disableAIFeatures" = true;
+
+        "editor.fontFamily" = lib.mkForce "Cascadia Mono, Consolas, 'Courier New', monospace";
+        "editor.fontWeight" = 400;
+        # "editor.fontLigatures" = "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'";
+
+        "terminal.integrated.fontSize" = 16;
+        "terminal.integrated.fontFamily" = "Cascadia Mono";
+        # Turn off font ligatures in terminal
+        "terminal.integrated.fontLigatures.featureSettings" = "\"calt\" off, \"liga\" off";
+        "terminal.integrated.cursorStyleInactive" = "line";
+        "terminal.integrated.cursorStyle" = "line";
+        "terminal.integrated.cursorWidth" = 2;
+
+        "editor.formatOnSave" = true;
+        "editor.quickSuggestions" = {
+          "comments" = "off";
+          "other" = "on";
+          "strings" = "off";
+        };
+        "editor.tabSize" = 2;
+
+        "[nix]" = {
+          "editor.defaultFormatter" = "jnoortheen.nix-ide";
+          "editor.formatOnSave" = true;
+        };
+      };
+      languageSnippets.cpp = ./cpp.json;
+      keybindings = ./keybindings.json;
+      extensions =
+        with pkgs.vscode-extensions;
+        [
+          jnoortheen.nix-ide
+        ]
+        ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+          {
+            name = "one-monokai";
+            publisher = "azemoh";
+            version = "0.5.2";
+            sha256 = "lky8hF5h/VIIEecS+zjoTLhyWwWC0axNnIgnkPJAnOA=";
+          }
+        ];
+    };
+  };
+}
