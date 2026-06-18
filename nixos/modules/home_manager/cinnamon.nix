@@ -157,9 +157,9 @@ with lib.hm.gvariant;
     };
 
     # Reduce input lag: https://hugosum.com/blog/reduce-input-lag-for-gaming-on-gnome
-    "org/gnome/mutter" = {
-      experimental-features = [ "variable-refresh-rate" ];
-    };
+    # "org/gnome/mutter" = {
+    #   experimental-features = [ "variable-refresh-rate" ];
+    # };
 
     "org/nemo/preferences" = {
       show-hidden-files = true;

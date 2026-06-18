@@ -18,13 +18,13 @@
   };
 
   # From https://wiki.nixos.org/wiki/NVIDIA
-  hardware.graphics.enable = true; # this is opengl enable.
-  services.xserver.videoDrivers = [
-    "nvidia"
-    # "intel"
-  ];
-  hardware.nvidia.open = true; # see the note above
-  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
+  # hardware.graphics.enable = true; # this is opengl enable.
+  # services.xserver.videoDrivers = [
+  #   "nvidia"
+  #   # "intel"
+  # ];
+  # hardware.nvidia.open = true; # see the note above
+  # hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
 
   # From https://discourse.nixos.org/t/enabling-nvidia-makes-graphics-slower/46435/4
   # hardware.opengl = {
