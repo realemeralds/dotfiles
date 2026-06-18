@@ -1,8 +1,10 @@
 # Source;
 { pkgs, ... }: {
-  environment.systemPackages = with pkgs; [
-    zsh-powerlevel10k
-  ];
+  users.users."filo" = {
+    packages = with pkgs; [
+      zsh-powerlevel10k
+    ];
+  };
   programs.zsh = {
     enable = true;
     enableCompletion = true;
