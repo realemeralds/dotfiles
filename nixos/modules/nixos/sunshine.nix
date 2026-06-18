@@ -1,5 +1,10 @@
 # From https://nixos.wiki/wiki/Sunshine
-{ pkgs, lib, ... }:
+{
+  config,
+  pkgs,
+  lib,
+  ...
+}:
 {
   services.sunshine = {
     enable = true;
@@ -11,6 +16,29 @@
   #   cudaSupport = true;
   #   cudaPackages = pkgs.cudaPackages;
   # };
+
+  # From https://discourse.nixos.org/t/enabling-nvidia-makes-graphics-slower/46435/4
+  hardware.opengl = {
+    enable = true;
+    # driSupport = true;
+    # driSupport32Bit = true;
+  };
+
+  # boot.extraModulePackages = [
+  #   config.boot.kernelPackages.nvidia_x11
+  # ];
+  # boot.blacklistedKernelModules = [
+  #   "nouveau"
+  #   "rivafb"
+  #   "nvidiafb"
+  #   "rivatv"
+  #   "nv"
+  #   "uvcvideo"
+  # ];
+  # services.xserver.videoDrivers = [
+  #   "nvidia"
+  #   "intel"
+  # ];
 
   security.wrappers.sunshine = {
     owner = "root";
