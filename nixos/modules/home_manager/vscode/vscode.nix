@@ -27,7 +27,7 @@
         # "editor.fontLigatures" = "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'";
 
         "terminal.integrated.fontSize" = 16;
-        "terminal.integrated.fontFamily" = "Cascadia Mono";
+        "terminal.integrated.fontFamily" = "CaskaydiaCove Nerd Font Mono"; # For powershell-10k;
         # Turn off font ligatures in terminal
         "terminal.integrated.fontLigatures.featureSettings" = "\"calt\" off, \"liga\" off";
         "terminal.integrated.cursorStyleInactive" = "line";
