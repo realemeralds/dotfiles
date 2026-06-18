@@ -14,6 +14,8 @@
       userSettings = {
         "explorer.sortOrder" = "type";
         "explorer.confirmDelete" = false;
+        "explorer.confirmDragAndDrop" = false;
+
         "update.showReleaseNotes" = false;
         "workbench.colorTheme" = "One Monokai";
         "workbench.editor.empty.hint" = "hidden";

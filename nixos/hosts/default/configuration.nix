@@ -18,6 +18,7 @@
     # Basics
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/icons.nix
+    ../../modules/nixos/zsh.nix
 
     # lib<x>
     ../../modules/nixos/libinput.nix
@@ -34,6 +35,12 @@
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
+
+  programs.nix-ld.enable = true;
+  programs.nix-ld.libraries = with pkgs; [
+    # Add any missing dynamic libraries for unpackaged
+    # programs here, NOT in environment.systemPackages
+  ];
 
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
