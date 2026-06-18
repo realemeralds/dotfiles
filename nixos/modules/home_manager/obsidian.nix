@@ -4,6 +4,7 @@ let
   obsidian_vault = "./Documents/obsidian_vault";
 in
 {
+  # Decided against a declarative config.
   programs.obsidian.enable = true;
 
   programs.obsidian.vaults."Obsidian Vault" = {

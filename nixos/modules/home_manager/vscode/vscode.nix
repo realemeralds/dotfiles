@@ -47,12 +47,13 @@
 
         "git.openRepositoryInParentFolders" = "always";
       };
-      languageSnippets.cpp = ./cpp.json;
-      keybindings = ./keybindings.json;
+      languageSnippets.cpp = lib.importJSON ./cpp.json;
+      keybindings = lib.importJSON ./keybindings.json;
       extensions =
         with pkgs.vscode-extensions;
         [
           jnoortheen.nix-ide
+          ms-vscode.cpptools-extension-pack
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {

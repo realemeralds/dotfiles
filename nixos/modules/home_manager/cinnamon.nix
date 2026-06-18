@@ -11,7 +11,6 @@ with lib.hm.gvariant;
         "panel1:left:0:menu@cinnamon.org:0"
         "panel1:center:0:grouped-window-list@cinnamon.org:2"
         "panel1:right:4:notifications@cinnamon.org:5"
-        "panel1:right:6:sound@cinnamon.org:11"
         "panel2:center:0:calendar@cinnamon.org:13"
         "panel1:right:8:cornerbar@cinnamon.org:14"
         "panel2:left:0:workspace-switcher@cinnamon.org:15"
