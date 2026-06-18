@@ -12,17 +12,26 @@
     openFirewall = true;
   };
 
-  # services.sunshine.package = pkgs.sunshine.override {
-  #   cudaSupport = true;
-  #   cudaPackages = pkgs.cudaPackages;
-  # };
+  services.sunshine.package = pkgs.sunshine.override {
+    cudaSupport = true;
+    cudaPackages = pkgs.cudaPackages;
+  };
+
+  # From https://wiki.nixos.org/wiki/NVIDIA
+  hardware.graphics.enable = true; # this is opengl enable.
+  services.xserver.videoDrivers = [
+    "nvidia"
+    "intel"
+  ];
+  hardware.nvidia.open = true; # see the note above
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
 
   # From https://discourse.nixos.org/t/enabling-nvidia-makes-graphics-slower/46435/4
-  hardware.opengl = {
-    enable = true;
-    # driSupport = true;
-    # driSupport32Bit = true;
-  };
+  # hardware.opengl = {
+  #   enable = true;
+  #   # driSupport = true;
+  #   # driSupport32Bit = true;
+  # };
 
   # boot.extraModulePackages = [
   #   config.boot.kernelPackages.nvidia_x11
