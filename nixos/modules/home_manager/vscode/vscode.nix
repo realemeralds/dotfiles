@@ -60,6 +60,7 @@
         [
           jnoortheen.nix-ide
           ms-vscode.cpptools-extension-pack
+          mkhl.direnv
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
