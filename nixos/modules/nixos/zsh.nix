@@ -5,6 +5,11 @@
       zsh-powerlevel10k
     ];
   };
+
+  security.sudo.extraConfig = ''
+    Defaults pwfeedback # password input feedback - makes typed password visible as asterisks
+  '';
+
   programs.zsh = {
     enable = true;
     enableCompletion = true;
