@@ -45,6 +45,10 @@
           "editor.formatOnSave" = true;
         };
 
+        "[cpp]" = {
+          "editor.formatOnSave" = false;
+        };
+
         "git.openRepositoryInParentFolders" = "always";
       };
       languageSnippets.cpp = lib.importJSON ./cpp.json;
