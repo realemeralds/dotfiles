@@ -21,7 +21,7 @@
   hardware.graphics.enable = true; # this is opengl enable.
   services.xserver.videoDrivers = [
     "nvidia"
-    "intel"
+    # "intel"
   ];
   hardware.nvidia.open = true; # see the note above
   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
