@@ -122,7 +122,6 @@
     packages = with pkgs; [
       nixfmt
       nixfmt-tree
-      direnv
       libsecret
       libnotify
       jq
