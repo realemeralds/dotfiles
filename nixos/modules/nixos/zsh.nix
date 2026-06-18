@@ -27,6 +27,10 @@
       # https://manpages.ubuntu.com/manpages/plucky/en/man5/dir_colors.5.html
       #LS_COLORS='...'
       #export LS_COLORS
+
+      # Direnv hook: https://direnv.net/docs/hook.html
+      eval "$(direnv hook zsh)"
+
     '';
     histSize = 10000;
 
