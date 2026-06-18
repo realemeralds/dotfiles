@@ -7,10 +7,10 @@
     openFirewall = true;
   };
 
-  services.sunshine.package = pkgs.sunshine.override {
-    cudaSupport = true;
-    cudaPackages = pkgs.cudaPackages;
-  };
+  # services.sunshine.package = pkgs.sunshine.override {
+  #   cudaSupport = true;
+  #   cudaPackages = pkgs.cudaPackages;
+  # };
 
   security.wrappers.sunshine = {
     owner = "root";
