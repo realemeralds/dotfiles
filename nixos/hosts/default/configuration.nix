@@ -27,6 +27,7 @@
     ../../modules/nixos/neofetch.nix
     ../../modules/nixos/sunshine.nix
     ../../modules/nixos/prism.nix
+    ../../modules/nixos/steam.nix
   ];
 
   # Use existing nixpkgs install (https://discourse.nixos.org/t/home-manager-does-not-allowunfree/25681/8)
