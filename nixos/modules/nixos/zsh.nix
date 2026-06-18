@@ -11,7 +11,7 @@
     promptInit = ''
       # this act as your ~/.zshrc but for all users (/etc/zshrc)
       source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme
-      source /etc/powerlevel10k/p10k.zsh
+      source ~/.p10k.zsh
 
       # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
       # Initialization code that may require console input (password prompts, [y/n]
@@ -39,5 +39,6 @@
   };
   users.users."filo".shell = pkgs.zsh;
   system.userActivationScripts.zshrc = "touch .zshrc";
+  environment.pathsToLink = [ "/share/zsh" ];
   environment.shells = with pkgs; [ zsh ];
 }
