@@ -41,6 +41,7 @@
           "strings" = "off";
         };
         "editor.tabSize" = 2;
+        "debug.onTaskErrors" = "abort";
 
         "[nix]" = {
           "editor.defaultFormatter" = "jnoortheen.nix-ide";
