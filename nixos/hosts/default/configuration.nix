@@ -123,6 +123,7 @@
     ];
     packages = with pkgs; [
       nixfmt
+      nixd
       nixfmt-tree
       libsecret
       libnotify
