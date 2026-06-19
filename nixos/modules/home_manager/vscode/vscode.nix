@@ -73,6 +73,7 @@
           jnoortheen.nix-ide
           ms-vscode.cpptools-extension-pack
           mkhl.direnv
+          tamasfe.even-better-toml
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
