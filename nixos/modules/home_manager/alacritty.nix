@@ -9,7 +9,9 @@
     target = ".config/alacritty/alacritty.toml";
   };
 
-  home.sessionVariables = {
-    TERMINAL = "alacritty";
+  dconf.settings = {
+    "org/cinnamon/desktop/applications/terminal" = {
+      exec = "alacritty";
+    };
   };
 }
