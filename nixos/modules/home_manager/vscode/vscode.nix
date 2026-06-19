@@ -49,6 +49,11 @@
         };
         "nix.enableLanguageServer" = true;
         "nix.serverPath" = "nil";
+        "nix.serverSettings" = {
+          formatting = {
+            "command" = [ "nixfmt" ];
+          };
+        };
 
         "[cpp]" = {
           "editor.formatOnSave" = false;
