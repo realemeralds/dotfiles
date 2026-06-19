@@ -15,9 +15,8 @@
 
       in
       [
-        "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=${
-          toString config.users.users."filo".uid
-        },gid=${toString config.users.groups.users.gid}"
+        "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
+        "nofail"
       ];
   };
   networking.firewall.extraCommands = "iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns";
