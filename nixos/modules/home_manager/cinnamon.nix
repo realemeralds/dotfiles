@@ -75,6 +75,16 @@ with lib.hm.gvariant;
       toolkit-accessibility = false;
     };
 
+    "org/cinnamon/desktop/keybindings" = {
+      custom-list = [ "custom0" ];
+    };
+
+    "org/cinnamon/desktop/keybindings/custom-keybindings/custom0" = {
+      binding = [ "<Primary><Shift>Escape" ];
+      command = "gnome-system-monitor";
+      name = "Open System Monitor";
+    };
+
     "org/cinnamon/desktop/keybindings/media-keys" = {
       area-screenshot = [ ];
       area-screenshot-clip = [ "<Shift><Super>s" ];
