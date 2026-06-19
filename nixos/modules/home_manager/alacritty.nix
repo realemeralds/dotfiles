@@ -3,9 +3,9 @@
     enable = true;
   };
 
-  # home.file."alacritty" = {
-  #   enable = true;
-  #   # source = "dotfiles/nixos/configs/alacritty.toml";
-  #   # target = ".config/alacritty/alacritty.toml";
-  # };
+  home.file."alacritty" = {
+    enable = true;
+    source = ./../../../configs/alacritty.toml;
+    target = ".config/alacritty/alacritty.toml";
+  };
 }
