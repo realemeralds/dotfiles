@@ -1,7 +1,10 @@
 { pkgs, config, ... }:
 {
   # For mount.cifs, required unless domain name resolution is not needed.
-  environment.systemPackages = [ pkgs.cifs-utils ];
+  environment.systemPackages = with pkgs; [
+    cifs-utils
+    samba
+  ];
   fileSystems."/mnt/filofiles" = {
     device = "//192.168.1.69/filofiles";
     fsType = "cifs";
