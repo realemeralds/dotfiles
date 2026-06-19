@@ -45,6 +45,14 @@ with lib.hm.gvariant;
       ];
     };
 
+    "org/cinnamon/desktop/background" = {
+      picture-uri =
+        let
+          currPath = ../../../configs/backgrounds/complete-8.png;
+        in
+        "${currPath}";
+    };
+
     "org/cinnamon/desktop/a11y/applications" = {
       screen-reader-enabled = false;
     };
@@ -156,14 +164,14 @@ with lib.hm.gvariant;
       sort-directories-first = true;
       sort-order = "ascending";
       type-format = "category";
-      window-position = mkTuple [
-        412
-        62
-      ];
-      window-size = mkTuple [
-        1096
-        822
-      ];
+      # window-position = mkTuple [
+      #   412
+      #   62
+      # ];
+      # window-size = mkTuple [
+      #   1096
+      #   822
+      # ];
     };
 
     # Reduce input lag: https://hugosum.com/blog/reduce-input-lag-for-gaming-on-gnome
