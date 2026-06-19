@@ -8,4 +8,8 @@
     source = ./../../../configs/alacritty.toml;
     target = ".config/alacritty/alacritty.toml";
   };
+
+  home.sessionVariables = {
+    TERMINAL = "alacritty";
+  };
 }
