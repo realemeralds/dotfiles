@@ -19,7 +19,11 @@
         "nofail"
       ];
   };
-  networking.firewall.extraCommands = "iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns";
+  networking.firewall.extraCommands = ''
+    iptables -A nixos-fw -p tcp --source 192.0.2.0/24 --dport 137 -j nixos-fw-accept
+    iptables -A nixos-fw -p udp --source 192.0.2.0/24 --dport 137 -j nixos-fw-accept
+    iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns
+  '';
 }
 # {
 #   # For mount.cifs, required unless domain name resolution is not needed.
