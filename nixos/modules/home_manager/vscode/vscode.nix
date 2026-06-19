@@ -74,6 +74,7 @@
           ms-vscode.cpptools-extension-pack
           mkhl.direnv
           tamasfe.even-better-toml
+          aaron-bond.better-comments
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
