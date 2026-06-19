@@ -50,7 +50,7 @@ with lib.hm.gvariant;
         let
           currPath = ../../../configs/backgrounds/complete-8.png;
         in
-        "${currPath}";
+        "file://${currPath}";
     };
 
     "org/cinnamon/desktop/a11y/applications" = {
