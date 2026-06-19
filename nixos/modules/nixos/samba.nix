@@ -1,10 +1,13 @@
-{ pkgs, config, ... }:
+{ pkgs, ... }:
 {
   # For mount.cifs, required unless domain name resolution is not needed.
   environment.systemPackages = with pkgs; [
     cifs-utils
     # samba # For debugging
   ];
+  networking.firewall.extraCommands = ''
+    iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns
+  '';
   fileSystems."/mnt/filofiles" = {
     device = "//192.168.1.69/filofiles";
     fsType = "cifs";
@@ -19,7 +22,46 @@
         "nofail"
       ];
   };
-  networking.firewall.extraCommands = ''
-    iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns
-  '';
+  fileSystems."/mnt/filo" = {
+    device = "//192.168.1.69/filo";
+    fsType = "cifs";
+    options =
+      let
+        # this line prevents hanging on network split
+        automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
+
+      in
+      [
+        "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
+        "nofail"
+      ];
+  };
+  fileSystems."/mnt/sharedfiles" = {
+    device = "//192.168.1.69/sharedfiles";
+    fsType = "cifs";
+    options =
+      let
+        # this line prevents hanging on network split
+        automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
+
+      in
+      [
+        "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
+        "nofail"
+      ];
+  };
+  fileSystems."/mnt/backup" = {
+    device = "//192.168.1.69/backup";
+    fsType = "cifs";
+    options =
+      let
+        # this line prevents hanging on network split
+        automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
+
+      in
+      [
+        "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
+        "nofail"
+      ];
+  };
 }
