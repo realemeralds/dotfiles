@@ -54,6 +54,10 @@
             "command" = [ "nixfmt" ];
           };
         };
+        "nix.hiddenLanguageServerErrors" = [
+          "textDocument/formatting"
+          "textDocument/documentSymbol"
+        ];
 
         "[cpp]" = {
           "editor.formatOnSave" = false;
