@@ -9,6 +9,7 @@
     ../../modules/home_manager/direnv.nix
     ../../modules/home_manager/git.nix
     ../../modules/home_manager/obsidian.nix
+    ../../modules/home_manager/spotify.nix
     ../../modules/home_manager/zen.nix
   ];
 
