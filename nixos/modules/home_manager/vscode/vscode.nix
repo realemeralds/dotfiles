@@ -47,6 +47,13 @@
           "editor.defaultFormatter" = "jnoortheen.nix-ide";
           "editor.formatOnSave" = true;
         };
+        "nix.enableLanguageServer" = true;
+        "nix.serverPath" = "nixd";
+        "nix.serverSettings" = {
+          "formatting" = {
+            "command" = [ "nixfmt" ];
+          };
+        };
 
         "[cpp]" = {
           "editor.formatOnSave" = false;
