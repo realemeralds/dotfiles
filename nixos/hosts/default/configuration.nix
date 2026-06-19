@@ -115,6 +115,7 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users.users."filo" = {
+    home = "/home/filo";
     isNormalUser = true;
     description = "Matt C.";
     extraGroups = [
