@@ -10,11 +10,11 @@
   hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
   hardware.nvidia.modesetting.enable = true;
 
-  # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users."filo".packages = with pkgs; [
-    protonup-ng
-  ];
   environment.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "\${HOME}/.steam/root/compatibilitytools.d";
   };
+  users.users."filo".packages = with pkgs; [
+    protonup-ng
+    (olympus.override { celesteWrapper = "steam-run"; }) # Celeste Modding
+  ];
 }
