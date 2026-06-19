@@ -125,6 +125,7 @@
       nixfmt-tree
       libsecret
       libnotify
+      gnome-system-monitor
       jq
     ];
   };
