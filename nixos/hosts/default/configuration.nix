@@ -29,7 +29,6 @@
     ../../modules/nixos/libinput.nix
 
     # Applications
-    ../../modules/nixos/conky.nix
     ../../modules/nixos/neofetch.nix
     ../../modules/nixos/samba.nix
     ../../modules/nixos/sunshine.nix
