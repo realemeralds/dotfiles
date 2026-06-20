@@ -1,5 +1,5 @@
 { pkgs, ... }: {
-  systemd.user.services.conky_start = {
+  systemd.services.conky_start = {
     description = "Conky";
 
     wantedBy = [ "graphical-session.target" ];
