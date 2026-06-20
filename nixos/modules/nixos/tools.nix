@@ -10,5 +10,7 @@
     rip2
     tree
     dysk
+    lm_sensors
+    lsb-release
   ];
 }
