@@ -9,6 +9,7 @@
 
   # Install fonts (https://wiki.nixos.org/wiki/Fonts)
   fonts.packages = with pkgs; [
+    icomoon-feather
     cascadia-code
     nerd-fonts.caskaydia-cove
     nerd-fonts.caskaydia-mono
