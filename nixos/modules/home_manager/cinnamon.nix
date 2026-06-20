@@ -16,6 +16,17 @@ with lib.hm.gvariant;
     target = ".local/share/cinnamon/extensions/transparent-panels@germanfr";
   };
 
+  home.file."cinnamon_sound_switcher" = {
+    enable = true;
+    recursive = true;
+    source =
+      let
+        applet = "sound-switcher@irishbruse";
+      in
+      ../../../configs/cinnamon + ("/" + applet);
+    target = ".local/share/cinnamon/applets/transparent-panels@germanfr";
+  };
+
   dconf.settings = {
     "org/cinnamon" = {
       command-history = [ "r" ];
@@ -23,17 +34,18 @@ with lib.hm.gvariant;
       enabled-applets = [
         "panel1:left:0:menu@cinnamon.org:0"
         "panel1:center:0:grouped-window-list@cinnamon.org:2"
-        "panel1:right:1:notifications@cinnamon.org:5"
+        "panel1:right:2:notifications@cinnamon.org:5"
         "panel2:center:0:calendar@cinnamon.org:13"
-        "panel1:right:5:cornerbar@cinnamon.org:14"
+        "panel1:right:6:cornerbar@cinnamon.org:14"
         "panel2:left:0:workspace-switcher@cinnamon.org:15"
-        "panel1:right:3:trash@cinnamon.org:17"
-        "panel1:right:0:nightlight@cinnamon.org:18"
-        "panel1:right:2:sound@cinnamon.org:20"
+        "panel1:right:4:trash@cinnamon.org:17"
+        "panel1:right:1:nightlight@cinnamon.org:18"
+        "panel1:right:3:sound@cinnamon.org:20"
+        "panel1:right:0:sound-switcher@irishbruse:21"
       ];
       enabled-desklets = [ ];
       enabled-extensions = [ "transparent-panels@germanfr" ];
-      next-applet-id = 21;
+      next-applet-id = 22;
       panel-edit-mode = false;
       panel-zone-icon-sizes = "[{\"panelId\":1,\"left\":0,\"center\":0,\"right\":24},{\"left\":0,\"center\":0,\"right\":0,\"panelId\":2}]";
       panel-zone-symbolic-icon-sizes = "[{\"panelId\": 1, \"left\": 28, \"center\": 28, \"right\": 16}, {\"left\": 28, \"center\": 29, \"right\": 28, \"panelId\": 2}]";
