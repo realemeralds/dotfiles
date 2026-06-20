@@ -40,7 +40,6 @@ with lib.hm.gvariant;
         "panel2:left:0:workspace-switcher@cinnamon.org:15"
         "panel1:right:4:trash@cinnamon.org:17"
         "panel1:right:1:nightlight@cinnamon.org:18"
-        "panel1:right:3:sound@cinnamon.org:20"
         "panel1:right:0:sound-switcher@irishbruse:21"
       ];
       enabled-desklets = [ ];
