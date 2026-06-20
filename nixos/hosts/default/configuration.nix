@@ -21,7 +21,7 @@
     ../../modules/nixos/icons.nix
     ../../modules/nixos/python.nix
     ../../modules/nixos/greeter.nix
-    ../../modules/nixos/grub.nix
+    ../../modules/nixos/boot.nix
     ../../modules/nixos/zsh.nix
 
     # lib<x>
@@ -40,7 +40,7 @@
   home-manager.useGlobalPkgs = true;
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
+  # boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
   programs.nix-ld.enable = true;
