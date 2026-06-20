@@ -16,6 +16,7 @@
     inputs.home-manager.nixosModules.default
 
     # Basics
+    ../../modules/nixos/tools.nix
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/icons.nix
     ../../modules/nixos/zsh.nix
@@ -122,15 +123,6 @@
     extraGroups = [
       "networkmanager"
       "wheel"
-    ];
-    packages = with pkgs; [
-      nixfmt
-      nil
-      nixfmt-tree
-      libsecret
-      libnotify
-      gnome-system-monitor
-      jq
     ];
   };
 
