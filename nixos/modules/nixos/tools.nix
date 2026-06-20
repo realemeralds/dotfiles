@@ -8,5 +8,7 @@
     gnome-system-monitor
     fzf
     rip2
+    tree
+    dysk
   ];
 }
