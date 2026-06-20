@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=conky && sleep 5 && conky && sleep 5 && conky
+Exec=conky
 X-GNOME-Autostart-enabled=true
 NoDisplay=false
 Hidden=false
