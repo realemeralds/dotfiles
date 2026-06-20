@@ -1,13 +1,12 @@
 {
   programs.kitty = {
+    enable = true;
     themeFile = "Alabaster_Dark";
     shellIntegration.enableZshIntegration = true;
     settings = {
+      enable_audio_bell = false;
       # Fonts
-      font_family = {
-        family = "CaskaydiaCove Nerd Font Mono";
-        style = "Regular";
-      };
+      font_family = "CaskaydiaCove Nerd Font Mono";
       font_size = 14;
 
       cursor_shape = "beam";
