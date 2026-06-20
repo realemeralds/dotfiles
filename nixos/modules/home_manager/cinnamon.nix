@@ -5,6 +5,17 @@
 with lib.hm.gvariant;
 
 {
+  home.file."cinnamon_transparent_panels" = {
+    enable = true;
+    recursive = true;
+    source =
+      let
+        extension = "transparent-panels@germanfr";
+      in
+      ../../../configs/cinnamon + ("/" + extension);
+    target = ".local/share/cinnamon/extensions/transparent-panels@germanfr";
+  };
+
   dconf.settings = {
     "org/cinnamon" = {
       enabled-applets = [
@@ -236,6 +247,5 @@ with lib.hm.gvariant;
       connect-id = "NIXOS-778E81C7CA2BDB3BD608";
       no-overwrite = true;
     };
-
   };
 }
