@@ -5,10 +5,6 @@
 
   # 2. User-specific Home Manager Settings
   home-manager.users."filo" = { pkgs, ... }: {
-    programs.zsh.shellAliases = {
-      neofetch = "neowofetch";
-    };
-
     home.file."neofetch" = {
       enable = true;
       recursive = true;

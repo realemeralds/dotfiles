@@ -36,6 +36,8 @@
       # Direnv hook: https://direnv.net/docs/hook.html
       eval "$(direnv hook zsh)"
 
+      # Neofetch alias
+      alias neofetch="neowofetch"
     '';
     histSize = 10000;
 
