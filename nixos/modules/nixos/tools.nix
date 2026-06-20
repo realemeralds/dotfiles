@@ -2,7 +2,7 @@
   users.users."filo".packages = with pkgs; [
     jq
     nixfmt
-    nil
+    nixd
     nixfmt-tree
     libnotify
     gnome-system-monitor

@@ -48,16 +48,19 @@
           "editor.formatOnSave" = true;
         };
         "nix.enableLanguageServer" = true;
-        "nix.serverPath" = "nil";
+        "nix.serverPath" = "nixd";
         "nix.serverSettings" = {
-          formatting = {
-            "command" = [ "nixfmt" ];
+          "nixd" = {
+            formatting = {
+              "command" = [ "nixfmt" ];
+            };
           };
         };
-        "nix.hiddenLanguageServerErrors" = [
-          "textDocument/formatting"
-          "textDocument/documentSymbol"
-        ];
+        # For nil
+        # "nix.hiddenLanguageServerErrors" = [
+        #   "textDocument/formatting"
+        #   "textDocument/documentSymbol"
+        # ];
 
         "[cpp]" = {
           "editor.formatOnSave" = false;
