@@ -54,13 +54,17 @@
             formatting = {
               "command" = [ "nixfmt" ];
             };
+            options = {
+              "home-manager" = {
+                "expr" = "(builtins.getFlake \"../../../flake.nix\").homeConfigurations.\"filo\".options";
+              };
+            };
           };
         };
-        # For nil
-        # "nix.hiddenLanguageServerErrors" = [
-        #   "textDocument/formatting"
-        #   "textDocument/documentSymbol"
-        # ];
+        "nix.hiddenLanguageServerErrors" = [
+          "textDocument/definition"
+          "textDocument/documentSymbol"
+        ];
 
         "[cpp]" = {
           "editor.formatOnSave" = false;
