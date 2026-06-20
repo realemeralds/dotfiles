@@ -11,6 +11,7 @@
   fonts.packages = with pkgs; [
     icomoon-feather
     cascadia-code
+    jetbrains-mono
     nerd-fonts.caskaydia-cove
     nerd-fonts.caskaydia-mono
     nerd-fonts.iosevka
