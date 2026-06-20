@@ -19,6 +19,7 @@
     ../../modules/nixos/tools.nix
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/icons.nix
+    ../../modules/nixos/python.nix
     ../../modules/nixos/zsh.nix
 
     # lib<x>
