@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   users.users."filo".packages = with pkgs; [
     alsa-utils
+    indicator-sound-switcher
   ];
 
   # From https://github.com/JagHack/nixos-rice/blob/5e9da3f11befb64ec2c8a5eab666a6eaac20fbef/hosts/default/configuration.nix#L154
