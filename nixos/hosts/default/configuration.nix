@@ -23,6 +23,7 @@
     ../../modules/nixos/greeter.nix
     ../../modules/nixos/boot.nix
     ../../modules/nixos/sound.nix
+    ../../modules/nixos/systemd.nix
     ../../modules/nixos/zsh.nix
 
     # lib<x>

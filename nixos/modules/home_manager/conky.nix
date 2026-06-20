@@ -3,11 +3,11 @@
     enable = true;
   };
 
-  systemd.user.services.conky = {
-    Service = {
-      ExecStartPre = "${pkgs.coreutils}/bin/sleep 20";
-    };
-  };
+  # systemd.user.services.conky = {
+  #   Service = {
+  #     ExecStartPre = "${pkgs.coreutils}/bin/sleep 20";
+  #   };
+  # };
 
   home.file."conky" = {
     enable = true;
