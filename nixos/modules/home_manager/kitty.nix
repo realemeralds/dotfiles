@@ -5,6 +5,7 @@
     shellIntegration.enableZshIntegration = true;
     settings = {
       enable_audio_bell = false;
+      remember_window_position = true;
       # Fonts
       font_family = "CaskaydiaCove Nerd Font Mono";
       font_size = 14;

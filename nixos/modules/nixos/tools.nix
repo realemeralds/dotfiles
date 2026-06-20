@@ -10,6 +10,5 @@
     rip2
     tree
     dysk
-    unzip
   ];
 }
