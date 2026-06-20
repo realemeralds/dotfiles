@@ -5,7 +5,7 @@
 
   # 2. User-specific Home Manager Settings
   home-manager.users."filo" = { pkgs, ... }: {
-    home.shellAliases = {
+    programs.zsh.shellAliases = {
       neofetch = "neowofetch";
     };
 
