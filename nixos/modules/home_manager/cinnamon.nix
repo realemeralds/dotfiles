@@ -24,7 +24,7 @@ with lib.hm.gvariant;
         applet = "sound-switcher@irishbruse";
       in
       ../../../configs/cinnamon + ("/" + applet);
-    target = ".local/share/cinnamon/applets/transparent-panels@germanfr";
+    target = ".local/share/cinnamon/applets/sound-switcher@irishbruse";
   };
 
   dconf.settings = {
