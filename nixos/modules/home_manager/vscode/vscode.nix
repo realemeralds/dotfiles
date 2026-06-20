@@ -56,7 +56,8 @@
             };
             options = {
               "home-manager" = {
-                "expr" = ''(builtins.getFlake "/home/filo/dotfiles/nixos").homeConfigurations."filo".options'';
+                "expr" =
+                  "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options.home-manager.users.type.getSubOptions []";
               };
             };
           };
