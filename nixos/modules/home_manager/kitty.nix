@@ -16,7 +16,13 @@
       cursor_blink_interval = "0.5";
 
       background_opacity = 0.9;
-      window_padding_width = "16 12 16 18";
+      window_padding_width = "6 2 6 6";
+    };
+  };
+
+  dconf.settings = {
+    "org/cinnamon/desktop/applications/terminal" = {
+      exec = "kitty";
     };
   };
 }
