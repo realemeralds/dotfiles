@@ -10,6 +10,6 @@
     rip2
     tree
     dysk
-    ueberzug
+    unzip
   ];
 }
