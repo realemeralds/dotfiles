@@ -16,7 +16,7 @@
       cursor_blink_interval = "0.5";
 
       background_opacity = 0.9;
-      window_padding_width = "8 6 8 8";
+      window_padding_width = "12 4 12 12";
     };
   };
 
