@@ -4,18 +4,9 @@
   };
 
   systemd.user.services.conky = {
-    Unit = {
-      Description = "Conky - Lightweight system monitor";
-      After = [ "graphical-session.target" ];
-    };
-
     Service = {
-      Restart = "always";
-      RestartSec = "3";
-      ExecStart = lib.mkForce "${pkgs.coreutils}/bin/sleep 20 && ${pkgs.conky}/bin/conky";
+      ExecStartPre = "${pkgs.coreutils}/bin/sleep 20";
     };
-
-    Install.WantedBy = [ "graphical-session.target" ];
   };
 
   home.file."conky" = {
