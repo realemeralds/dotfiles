@@ -27,8 +27,9 @@
 
     # Applications
     ../../modules/nixos/neofetch.nix
-    ../../modules/nixos/sunshine.nix
     ../../modules/nixos/samba.nix
+    ../../modules/nixos/sunshine.nix
+    ../../modules/nixos/spotify.nix
     ../../modules/nixos/prism.nix
     ../../modules/nixos/steam.nix
   ];
