@@ -20,6 +20,7 @@
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/icons.nix
     ../../modules/nixos/python.nix
+    ../../modules/nixos/greeter.nix
     ../../modules/nixos/zsh.nix
 
     # lib<x>
