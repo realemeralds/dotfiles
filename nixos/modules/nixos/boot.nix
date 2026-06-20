@@ -12,6 +12,8 @@
       device = "nodev";
       useOSProber = true;
       efiSupport = true;
+      font = "${pkgs.ubuntu-classic}/share/fonts/truetype/ubuntu/Ubuntu-R.ttf";
+      fontSize = 14;
       theme = pkgs.stdenv.mkDerivation {
         pname = "distro-grub-themes";
         version = "3.1";
