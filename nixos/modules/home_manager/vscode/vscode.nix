@@ -60,6 +60,11 @@
                   "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options.home-manager.users.type.getSubOptions []";
               };
             };
+            "diagnostic" = {
+              "suppress" = [
+                "sema-unused-def-lambda-noarg-formal"
+              ];
+            };
           };
         };
         "nix.hiddenLanguageServerErrors" = [
