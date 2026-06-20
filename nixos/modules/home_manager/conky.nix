@@ -9,4 +9,10 @@
     source = ./../../../configs/conky.conf;
     target = ".config/conky/conky.conf";
   };
+
+  home.file."conky_autostart" = {
+    enable = true;
+    source = ./../../../configs/conky.desktop;
+    target = ".config/autostart/conky.desktop";
+  };
 }
