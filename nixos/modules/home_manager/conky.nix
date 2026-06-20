@@ -12,7 +12,7 @@
     Service = {
       Restart = "always";
       RestartSec = "3";
-      ExecStart = "${pkgs.conky}/bin/conky";
+      ExecStart = lib.mkForce "${pkgs.coreutils}/bin/sleep 20 && ${pkgs.conky}/bin/conky";
     };
 
     Install.WantedBy = [ "graphical-session.target" ];
