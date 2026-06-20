@@ -21,6 +21,7 @@
     ../../modules/nixos/icons.nix
     ../../modules/nixos/python.nix
     ../../modules/nixos/greeter.nix
+    ../../modules/nixos/grub.nix
     ../../modules/nixos/zsh.nix
 
     # lib<x>
