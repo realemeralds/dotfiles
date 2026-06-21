@@ -209,6 +209,10 @@ with lib.hm.gvariant;
       show-hidden-files = true;
     };
 
+    "org/nemo/desktop" = {
+      desktop-layout = "false::false";
+    };
+
     "org/nemo/window-state" = {
       geometry = "800x550+159+152";
       maximized = true;
