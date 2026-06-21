@@ -45,4 +45,8 @@
   boot.plymouth.theme = "breeze";
   boot.initrd.systemd.enable = true;
   boot.loader.systemd-boot.enable = true;
+  boot.initrd.systemd.services.plymouth-start = {
+    after = [ "systemd-modules-load.service" ];
+    requires = [ "systemd-modules-load.service" ];
+  };
 }
