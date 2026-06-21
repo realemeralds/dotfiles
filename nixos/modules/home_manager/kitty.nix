@@ -6,6 +6,7 @@
     settings = {
       enable_audio_bell = false;
       remember_window_position = true;
+      term = "xterm-256color";
       # Fonts
       font_family = "CaskaydiaCove Nerd Font Mono";
       font_size = 14;
