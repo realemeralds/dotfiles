@@ -21,7 +21,7 @@
     ../../modules/nixos/icons.nix
     ../../modules/nixos/python.nix
     ../../modules/nixos/greeter.nix
-    ../../modules/nixos/boot.nix
+    # ../../modules/nixos/grub.nix
     ../../modules/nixos/plymouth.nix
     ../../modules/nixos/sound.nix
     ../../modules/nixos/zsh.nix
