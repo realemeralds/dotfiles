@@ -1,5 +1,9 @@
 { pkgs, ... }: {
   boot = {
+    initrd.systemd.services.plymouth-start = {
+      after = [ "systemd-modules-load.service" ];
+      requires = [ "systemd-modules-load.service" ];
+    };
     plymouth = {
       enable = true;
       # theme = "lone";
