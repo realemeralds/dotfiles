@@ -2,11 +2,18 @@
   boot = {
     plymouth = {
       enable = true;
-      theme = "lone";
+      # theme = "lone";
+      # themePackages = with pkgs; [
+      #   # By default we would install all themes
+      #   (adi1090x-plymouth-themes.override {
+      #     selected_themes = [ "lone" ];
+      #   })
+      # ];
+      theme = "rings";
       themePackages = with pkgs; [
         # By default we would install all themes
         (adi1090x-plymouth-themes.override {
-          selected_themes = [ "lone" ];
+          selected_themes = [ "rings" ];
         })
       ];
     };
