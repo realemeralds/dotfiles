@@ -12,5 +12,6 @@
     dysk
     lm_sensors
     lsb-release
+    restic
   ];
 }
