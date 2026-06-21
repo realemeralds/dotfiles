@@ -1,7 +1,4 @@
 { pkgs, ... }: {
-  # boot.initrd.kernelModules = [ "bochs" ];
-  # boot.initrd.verbose = false;
-  # boot.initrd.systemd.enable = true;
   boot = {
     plymouth = {
       enable = true;
@@ -15,19 +12,21 @@
     };
 
     # Enable "Silent boot"
-    consoleLogLevel = 3;
-    initrd.verbose = false;
+    # consoleLogLevel = 3;
+    # initrd.verbose = false;
+    # initrd.kernelModules = [ "bochs" ];
+    initrd.systemd.enable = true;
     kernelParams = [
-      "quiet"
+      # "quiet"
       "boot.shell_on_fail"
-      "rd.udev.log_level=3"
-      "rd.systemd.show_status=auto"
+      # "rd.udev.log_level=3"
+      # "rd.systemd.show_status=auto"
     ];
 
     # Hide the OS choice for bootloaders.
     # It's still possible to open the bootloader list by pressing any key
     # It will just not appear on screen unless a key is pressed
-    loader.timeout = 0;
+    # loader.timeout = 0;
     loader.systemd-boot.enable = true;
   };
 }
