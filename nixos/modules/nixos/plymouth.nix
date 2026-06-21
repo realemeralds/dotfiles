@@ -1,9 +1,9 @@
 { pkgs, ... }: {
   boot = {
-    initrd.systemd.services.plymouth-start = {
-      after = [ "systemd-modules-load.service" ];
-      requires = [ "systemd-modules-load.service" ];
-    };
+    # initrd.systemd.services.plymouth-start = {
+    #   after = [ "systemd-modules-load.service" ];
+    #   requires = [ "systemd-modules-load.service" ];
+    # };
     plymouth = {
       enable = true;
       # theme = "lone";
@@ -13,13 +13,13 @@
       #     selected_themes = [ "lone" ];
       #   })
       # ];
-      theme = "rings";
-      themePackages = with pkgs; [
-        # By default we would install all themes
-        (adi1090x-plymouth-themes.override {
-          selected_themes = [ "rings" ];
-        })
-      ];
+      # theme = "rings";
+      # themePackages = with pkgs; [
+      #   # By default we would install all themes
+      #   (adi1090x-plymouth-themes.override {
+      #     selected_themes = [ "rings" ];
+      #   })
+      # ];
     };
 
     # Enable "Silent boot"
