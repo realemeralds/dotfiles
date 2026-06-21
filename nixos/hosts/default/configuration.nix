@@ -22,6 +22,7 @@
     ../../modules/nixos/python.nix
     ../../modules/nixos/greeter.nix
     ../../modules/nixos/boot.nix
+    ../../modules/nixos/plymouth.nix
     ../../modules/nixos/sound.nix
     ../../modules/nixos/zsh.nix
 
