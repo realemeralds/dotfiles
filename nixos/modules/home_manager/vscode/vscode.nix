@@ -88,7 +88,6 @@
           mkhl.direnv
           tamasfe.even-better-toml
           aaron-bond.better-comments
-          ms-python.python
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
