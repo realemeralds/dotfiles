@@ -70,6 +70,7 @@
         "nix.hiddenLanguageServerErrors" = [
           "textDocument/definition"
           "textDocument/documentSymbol"
+          "textDocument/formatting"
         ];
 
         "[cpp]" = {

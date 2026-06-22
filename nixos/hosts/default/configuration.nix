@@ -37,6 +37,7 @@
     ../../modules/nixos/spotify.nix
     ../../modules/nixos/prism.nix
     ../../modules/nixos/steam.nix
+    ../../modules/nixos/restic.nix
   ];
 
   networking.hostName = "nixos"; # Define your hostname.
