@@ -229,6 +229,7 @@ with lib.hm.gvariant;
         "type"
         "date_modified"
       ];
+      default-zoom-level = "small";
     };
 
     "org/nemo/preferences" = {
