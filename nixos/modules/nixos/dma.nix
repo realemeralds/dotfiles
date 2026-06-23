@@ -14,7 +14,7 @@
     "dma.conf" = {
       enable = true;
       source = ../../../configs/dma.conf;
-      target = ./dma/dma.conf;
+      target = "./dma/dma.conf";
     };
   };
 }

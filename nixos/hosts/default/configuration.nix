@@ -26,6 +26,7 @@
     ../../modules/nixos/boot.nix
     ../../modules/nixos/sound.nix
     ../../modules/nixos/sops.nix
+    ../../modules/nixos/dma.nix
     ../../modules/nixos/zsh.nix
 
     # lib<x>
