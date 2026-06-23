@@ -12,9 +12,9 @@ version = "1"
     log = "~/Documents/restic/restic.log"
 
 [nixos]
-  base-dir = ""
+  base-dir = "~"
   repository = "sftp:filo@192.168.1.69:/media/backup/nixos-backup"
-  initialize = true
+  initialize = false
   force-inactive-lock = true
 
   [nixos.env]
@@ -24,7 +24,7 @@ version = "1"
     dry-run = true
     exclude-caches = true
     tag = ["personal"]
-    source = ["~/Documents", "~/Desktop", "~/Downloads"]
+    source = ["Documents", "Desktop", "Downloads"]
     # schedule = "18:10"
     schedule-lock-wait = "2h"
     run-after = "~/scripts/backup-success.sh"
