@@ -79,6 +79,8 @@
 
         "git.openRepositoryInParentFolders" = "always";
         "evenBetterToml.formatter.indentString" = "  ";
+        "evenBetterToml.formatter.indentEntries" = true;
+        "evenBetterToml.formatter.indentTables" = true;
       };
       languageSnippets.cpp = lib.importJSON ./cpp.json;
       keybindings = lib.importJSON ./keybindings.json;
