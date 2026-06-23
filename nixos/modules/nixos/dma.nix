@@ -1,6 +1,7 @@
 { pkgs, ... }: {
   users.users."filo".packages = with pkgs; [
     dma
+    mailutils
   ];
 
   sops.secrets."dma_auth" = {
