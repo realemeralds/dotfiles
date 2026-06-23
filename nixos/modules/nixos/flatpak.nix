@@ -1,6 +1,9 @@
 {
   services.flatpak = {
     enable = true;
-    packages = [ "com.discordapp.Discord" ];
+    packages = [
+      "com.discordapp.Discord"
+      "com.obsproject.Studio"
+    ];
   };
 }
