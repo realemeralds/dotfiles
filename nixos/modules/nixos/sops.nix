@@ -5,7 +5,7 @@
   sops.age.keyFile = "/home/filo/.config/sops/age/keys.txt";
 
   sops.secrets."rclone.ini" = {
-    path = "/home/filo/.config/rclone/rclone.conf";
+    path = "/root/.config/rclone/rclone.conf";
     sopsFile = ../../secrets/rclone.ini;
     format = "ini";
   };
