@@ -13,6 +13,7 @@
     ../../modules/home_manager/kitty.nix
     ../../modules/home_manager/obsidian.nix
     ../../modules/home_manager/zen.nix
+    ../../modules/home_manager/flatpak.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should

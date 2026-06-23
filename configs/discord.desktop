@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Exec=flatpak run com.discordapp.Discord --start-minimized
+X-GNOME-Autostart-enabled=true
+NoDisplay=false
+Hidden=false
+Name[en_GB]=discord.desktop
+Comment[en_GB]=systemd sucks!
+X-GNOME-Autostart-Delay=0
