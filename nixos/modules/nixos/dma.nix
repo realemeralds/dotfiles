@@ -1,4 +1,4 @@
-{ pkgs, ... }: {
+{ pkgs, config, ... }: {
   users.users."filo".packages = with pkgs; [
     dma
     mailutils
@@ -8,6 +8,7 @@
     path = "/etc/dma/auth.conf";
     sopsFile = ../../secrets/auth.conf;
     format = "binary";
+    owner = config.users.users.filo.name;
   };
 
   environment.etc = {
