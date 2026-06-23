@@ -18,8 +18,8 @@
   home-manager.users."filo" = {
     home.file."resticprofile" = {
       enable = true;
-      source = ./../../../configs/profile.toml;
-      target = ".config/resticprofile/profile.toml";
+      source = ./../../../configs/profiles.toml;
+      target = ".config/resticprofile/profiles.toml";
     };
 
     home.stateVersion = "26.11"; # Match your current state version
