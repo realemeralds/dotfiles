@@ -20,6 +20,8 @@
         home-manager.follows = "home-manager";
       };
     };
+
+    nix-flatpak.url = "github:gmodena/nix-flatpak"; # unstable branch. Use github:gmodena/nix-flatpak/?ref=<tag> to pin releases.
   };
 
   outputs =
@@ -32,6 +34,7 @@
         modules = [
           ./hosts/default/configuration.nix
           inputs.home-manager.nixosModules.default
+          inputs.nix-flatpak.nixosModules.nix-flatpak
         ];
       };
     };
