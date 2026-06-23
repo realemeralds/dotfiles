@@ -35,6 +35,7 @@
     # Applications
     ../../modules/nixos/neofetch.nix
     ../../modules/nixos/samba.nix
+    ../../modules/nixos/flatpak.nix
     ../../modules/nixos/syncthing.nix
     ../../modules/nixos/sunshine.nix
     ../../modules/nixos/spotify.nix
