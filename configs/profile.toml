@@ -1,0 +1,41 @@
+#:schema https://creativeprojects.github.io/resticprofile/jsonschema/config-1.json
+#
+# indentation is not needed but it makes it easier to read ;)
+#
+version = "1"
+
+[global]
+  default-command = "snapshots"
+  restic-stale-lock-age = "2h"
+
+  [global.schedule-defaults]
+    log = "~/Documents/restic/restic.log"
+
+[nixos]
+  base-dir = ""
+  repository = "sftp:filo@192.168.1.69:/media/backup/nixos-backup"
+  initialize = true
+  force-inactive-lock = true
+
+  [nixos.env]
+    RESTIC_PASSWORD = "0539Carissa"
+
+  [nixos.backup]
+    dry-run = true
+    exclude-caches = true
+    tag = ["personal"]
+    source = ["~/Documents", "~/Desktop", "~/Downloads"]
+    # schedule = "18:10"
+    schedule-lock-wait = "2h"
+    run-after = "~/scripts/backup-success.sh"
+    run-after-fail = 'printf "WARNING! FAILED Resticprofile NixOS backup @ /media/backup/nixos-backup on {{ .Now.Format "02 Jan 06 15:04 GMT+8" }}. \nError Message: ${ERROR_MESSAGE} \nError: ${ERROR_STDERR}"  | mail -s "WARNING! FAILED NixOS backup on {{ .Now.Format "02 Jan 06 15:04" }}" mattechane@gmail.com'
+
+  [nixos.retention]
+    before-backup = false
+    after-backup = true
+    keep-daily = 7
+    keep-weekly = 4
+    keep-monthly = 6
+    keep-yearly = 10
+    keep-within = "3h"
+    prune = true
