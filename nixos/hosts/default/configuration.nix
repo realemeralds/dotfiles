@@ -14,6 +14,7 @@
     # Include the results of the hardware scan.
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
+    inputs.sops-nix.nixosModules.sops
 
     # Basics
     ../../modules/nixos/tools.nix
@@ -24,6 +25,7 @@
     ../../modules/nixos/gc.nix
     ../../modules/nixos/boot.nix
     ../../modules/nixos/sound.nix
+    ../../modules/nixos/sops.nix
     ../../modules/nixos/zsh.nix
 
     # lib<x>
