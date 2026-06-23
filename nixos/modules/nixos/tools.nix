@@ -12,6 +12,6 @@
     dysk
     lm_sensors
     lsb-release
-    sops
+    flatpak
   ];
 }
