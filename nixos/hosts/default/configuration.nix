@@ -15,7 +15,6 @@
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
     inputs.sops-nix.nixosModules.sops
-    inputs.nix-flatpak.nixosModules.nix-flatpak
 
     # Basics
     ../../modules/nixos/tools.nix
@@ -36,7 +35,6 @@
     # Applications
     ../../modules/nixos/neofetch.nix
     ../../modules/nixos/samba.nix
-    ../../modules/nixos/flatpak.nix
     ../../modules/nixos/syncthing.nix
     ../../modules/nixos/sunshine.nix
     ../../modules/nixos/spotify.nix
