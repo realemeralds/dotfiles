@@ -3,7 +3,6 @@
     enable = true;
     packages = [
       "com.discordapp.Discord"
-      "com.obsproject.Studio"
     ];
   };
 }

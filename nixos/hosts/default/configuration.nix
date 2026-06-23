@@ -15,6 +15,7 @@
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
     inputs.sops-nix.nixosModules.sops
+    inputs.nix-flatpak.nixosModules.nix-flatpak
 
     # Basics
     ../../modules/nixos/tools.nix
