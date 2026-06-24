@@ -8,7 +8,8 @@
     enable = true;
     settings.main = {
       relayhost = [ "[smtp.gmail.com]:465" ];
-      smtp_use_tls = "yes";
+      myhostname = "test";
+      # smtp_use_tls = "yes";
       smtp_sasl_auth_enable = "yes";
       smtp_tls_wrappermode = "yes";
       smtp_tls_security_level = "encrypt";
