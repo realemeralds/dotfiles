@@ -21,11 +21,11 @@ version = "1"
     RESTIC_PASSWORD = "0539Carissa"
 
   [nixos.backup]
-    dry-run = true
+    dry-run = false
     exclude-caches = true
     tag = ["personal"]
     source = ["Documents", "Desktop", "Downloads"]
-    # schedule = "18:10"
+    exclude = ["Documents/restic"]
     schedule-lock-wait = "2h"
     run-after = "~/scripts/backup-success.sh"
     run-after-fail = 'printf "WARNING! FAILED Resticprofile NixOS backup @ /media/backup/nixos-backup on {{ .Now.Format "02 Jan 06 15:04 GMT+8" }}. \nError Message: ${ERROR_MESSAGE} \nError: ${ERROR_STDERR}"  | mail -s "WARNING! FAILED NixOS backup on {{ .Now.Format "02 Jan 06 15:04" }}" mattechane@gmail.com'
