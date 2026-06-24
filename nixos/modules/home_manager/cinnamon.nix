@@ -141,6 +141,9 @@ with lib.hm.gvariant;
     };
 
     "org/cinnamon/desktop/screensaver" = {
+      floating-widgets = false;
+      font-date = "Google Sans Code Medium 24";
+      font-time = "Google Sans Code 64";
       layout-group = 0;
     };
 
