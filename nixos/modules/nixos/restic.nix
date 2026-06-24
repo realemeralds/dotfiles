@@ -29,6 +29,7 @@
   };
 
   systemd.services."resticprofile" = {
+    path = [ pkgs.bash ];
     script = ''
       set -eu
       ${pkgs.resticprofile}/bin/resticprofile run-schedule backup@nixos
