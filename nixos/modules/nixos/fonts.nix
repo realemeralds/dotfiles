@@ -15,5 +15,6 @@
     nerd-fonts.caskaydia-cove
     nerd-fonts.caskaydia-mono
     nerd-fonts.iosevka
+    googlesans-code
   ];
 }
