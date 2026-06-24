@@ -7,7 +7,7 @@
       host = "smtp.gmail.com";
       from = "filosmartnotifs@gmail.com";
       user = "filosmartnotifs@gmail.com";
-      passwordeval = "cat /secrets/smtp_password.txt";
+      passwordeval = "cat /run/secrets/smtp_auth";
     };
   };
 
