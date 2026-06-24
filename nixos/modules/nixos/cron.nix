@@ -1,9 +1,9 @@
-{
+{ pkgs, ... }: {
   # Enable cron service
   services.cron = {
     enable = true;
     systemCronJobs = [
-      "@reboot      filo    resticprofile run-schedule backup@nixos"
+      "@reboot      filo    ${pkgs.resticprofile}/bin/resticprofile run-schedule backup@nixos"
     ];
   };
 }
