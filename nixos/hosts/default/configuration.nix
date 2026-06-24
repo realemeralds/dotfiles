@@ -26,7 +26,8 @@
     ../../modules/nixos/boot.nix
     ../../modules/nixos/sound.nix
     ../../modules/nixos/sops.nix
-    ../../modules/nixos/msmtp.nix
+    # ../../modules/nixos/msmtp.nix
+    ../../modules/nixos/postfix.nix
     ../../modules/nixos/zsh.nix
 
     # lib<x>
