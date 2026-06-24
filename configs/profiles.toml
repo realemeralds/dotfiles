@@ -8,9 +8,6 @@ version = "1"
   default-command = "snapshots"
   restic-stale-lock-age = "2h"
 
-  [global.schedule-defaults]
-    log = "~/Documents/restic/restic.log"
-
 [nixos]
   base-dir = "~"
   repository = "sftp:filo@192.168.1.69:/media/backup/nixos-backup"
@@ -21,7 +18,9 @@ version = "1"
     RESTIC_PASSWORD = "0539Carissa"
 
   [nixos.backup]
+    verbose = true
     dry-run = false
+    schedule-log = "~/Documents/restic/restic.log"
     exclude-caches = true
     tag = ["personal"]
     source = ["Documents", "Desktop", "Downloads"]
