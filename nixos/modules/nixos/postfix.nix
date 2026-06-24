@@ -1,6 +1,7 @@
 { config, pkgs, ... }: {
   users.users."filo".packages = with pkgs; [
     mailutils
+    gsasl
   ];
 
   services.postfix = {
