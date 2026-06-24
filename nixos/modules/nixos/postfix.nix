@@ -6,7 +6,7 @@
 
   services.postfix = {
     enable = true;
-    setSendmail = true;
+    # setSendmail = true;
     settings.main = {
       relayhost = [ "[smtp.gmail.com]:587" ];
       smtp_tls_wrappermode = "yes";
