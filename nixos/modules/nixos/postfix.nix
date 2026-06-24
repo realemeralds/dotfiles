@@ -2,6 +2,7 @@
   users.users."filo".packages = with pkgs; [
     mailutils
     gsasl
+    openssl
   ];
 
   services.postfix = {
