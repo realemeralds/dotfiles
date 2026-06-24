@@ -10,7 +10,7 @@ version = "1"
 
 [nixos]
   base-dir = "~"
-  repository = "sftp:filo@192.168.1.69:/media/backup/nixos-backup"
+  repository = "/mnt/backup/nixos-backup"
   initialize = false
   force-inactive-lock = true
 
