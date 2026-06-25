@@ -3,17 +3,16 @@
 {
   # Import Home Manager modules
   imports = [
-    # ../../modules/home_manager/alacritty.nix
     ../../modules/home_manager/vscode/vscode.nix
     ../../modules/home_manager/conky.nix
     ../../modules/home_manager/cinnamon.nix
     ../../modules/home_manager/chromium.nix
     ../../modules/home_manager/direnv.nix
+    ../../modules/home_manager/discord.nix
     ../../modules/home_manager/git.nix
     ../../modules/home_manager/kitty.nix
     ../../modules/home_manager/obsidian.nix
     ../../modules/home_manager/zen.nix
-    ../../modules/home_manager/flatpak.nix
   ];
 
   # Home Manager needs a bit of information about you and the paths it should

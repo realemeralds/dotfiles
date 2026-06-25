@@ -17,30 +17,28 @@
     inputs.sops-nix.nixosModules.sops
 
     # Basics
-    ../../modules/nixos/tools.nix
-    ../../modules/nixos/fonts.nix
-    ../../modules/nixos/icons.nix
-    ../../modules/nixos/python.nix
-    ../../modules/nixos/greeter.nix
-    ../../modules/nixos/gc.nix
     ../../modules/nixos/boot.nix
-    ../../modules/nixos/sound.nix
-    ../../modules/nixos/sops.nix
-    ../../modules/nixos/postfix.nix
-    ../../modules/nixos/zsh.nix
-
-    # lib<x>
+    ../../modules/nixos/fonts.nix
+    ../../modules/nixos/gc.nix
+    ../../modules/nixos/greeter.nix
+    ../../modules/nixos/icons.nix
     ../../modules/nixos/libinput.nix
+    ../../modules/nixos/python.nix
+    ../../modules/nixos/sops.nix
+    ../../modules/nixos/sound.nix
+    ../../modules/nixos/tools.nix
+    ../../modules/nixos/zsh.nix
 
     # Applications
     ../../modules/nixos/neofetch.nix
-    ../../modules/nixos/samba.nix
-    ../../modules/nixos/syncthing.nix
-    ../../modules/nixos/sunshine.nix
-    ../../modules/nixos/spotify.nix
-    ../../modules/nixos/prism.nix
-    ../../modules/nixos/steam.nix
     ../../modules/nixos/restic.nix
+    ../../modules/nixos/samba.nix
+    ../../modules/nixos/spotify.nix
+    ../../modules/nixos/steam.nix
+    ../../modules/nixos/sunshine.nix
+    ../../modules/nixos/syncthing.nix
+    ../../modules/nixos/postfix.nix
+    ../../modules/nixos/prism.nix
   ];
 
   networking.hostName = "nixos"; # Define your hostname.
