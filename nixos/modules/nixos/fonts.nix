@@ -12,6 +12,7 @@
     icomoon-feather
     cascadia-code
     jetbrains-mono
+    helvetica-neue-lt-std
     nerd-fonts.caskaydia-cove
     nerd-fonts.caskaydia-mono
     nerd-fonts.iosevka
