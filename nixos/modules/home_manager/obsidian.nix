@@ -1,6 +1,6 @@
 { lib, ... }:
 let
-  obsidian_path = "../../../../configs/.obsidian";
+  # obsidian_path = "../../../../configs/.obsidian";
   obsidian_vault = "./Documents/obsidian_vault";
 in
 {
