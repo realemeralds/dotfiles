@@ -26,7 +26,7 @@
     home.file."fonts" = {
       enable = true;
       source = ./../../../configs/fonts;
-      target = "~/.local/share/fonts";
+      target = ".local/share/fonts";
     };
 
     home.stateVersion = "26.11"; # Match your current state version
