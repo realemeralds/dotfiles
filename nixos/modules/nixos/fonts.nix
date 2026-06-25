@@ -15,6 +15,11 @@
     nerd-fonts.caskaydia-cove
     nerd-fonts.caskaydia-mono
     nerd-fonts.iosevka
-    googlesans-code
+    (google-fonts.override {
+      fonts = [
+        "GoogleSans"
+        "GoogleSansCode"
+      ];
+    })
   ];
 }
