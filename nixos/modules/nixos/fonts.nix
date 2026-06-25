@@ -17,9 +17,18 @@
     nerd-fonts.iosevka
     (google-fonts.override {
       fonts = [
-        "GoogleSans"
         "GoogleSansCode"
       ];
     })
   ];
+
+  home-manager.users."filo" = { pkgs, ... }: {
+    home.file."fonts" = {
+      enable = true;
+      source = ./../../../configs/fonts;
+      target = "~/.local/share/fonts";
+    };
+
+    home.stateVersion = "26.11"; # Match your current state version
+  };
 }
