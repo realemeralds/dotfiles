@@ -18,7 +18,7 @@
 
     # Basics
     ../../modules/nixos/boot.nix
-    ../../modules/nixos/plymouth.nix
+    # ../../modules/nixos/plymouth.nix
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/gc.nix
     ../../modules/nixos/greeter.nix
