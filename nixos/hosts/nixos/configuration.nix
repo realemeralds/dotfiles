@@ -59,6 +59,7 @@
 
   # Set your time zone.
   time.timeZone = "Asia/Singapore";
+  time.hardwareClockInLocalTime = true; # https://wiki.nixos.org/wiki/Dual_Booting_NixOS_and_Windows
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_GB.UTF-8";
