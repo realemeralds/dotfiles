@@ -7,4 +7,12 @@
       Option "ScrollPixelDistance" "12"
     '';
   };
+
+  services.libinput.touchpad = {
+    accelProfile = "flat";
+    accelSpeed = "0.4";
+    additionalOptions = ''
+      Option "ScrollPixelDistance" "30"
+    '';
+  };
 }

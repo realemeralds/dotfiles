@@ -5,7 +5,7 @@
   imports = [
     ../../modules/home_manager/vscode/vscode.nix
     ../../modules/home_manager/conky.nix
-    ../../modules/home_manager/cinnamon.nix
+    ../../modules/home_manager/cinnamon_laptop.nix
     ../../modules/home_manager/chromium.nix
     ../../modules/home_manager/direnv.nix
     # ../../modules/home_manager/discord.nix

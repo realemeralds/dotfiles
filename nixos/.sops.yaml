@@ -1,7 +1,9 @@
 keys:
   - &nixos age10ket4wwy754hcfpxf9cv2fake847u0g3s8mcat5m9m5vmz5vddcqw7xljw
+  - &nixos-laptop age14kj08lk5npqrn96zkuvg6ty44uv5g3nylmz4cadergqd6zr60u6s0pzq3c
 creation_rules:
   - path_regex: secrets/*
     key_groups:
     - age:
       - *nixos
+      - *nixos-laptop
