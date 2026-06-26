@@ -16,24 +16,13 @@ with lib.hm.gvariant;
     target = ".local/share/cinnamon/extensions/transparent-panels@germanfr";
   };
 
-  home.file."cinnamon_sound_switcher" = {
-    enable = true;
-    recursive = true;
-    source =
-      let
-        applet = "sound-switcher@irishbruse";
-      in
-      ../../../configs/cinnamon + ("/" + applet);
-    target = ".local/share/cinnamon/applets/sound-switcher@irishbruse";
-  };
-
   dconf.settings = {
     "com/github/FontManager/FontManager" = {
-      browse-pane-position = 54.94736842105263;
+      browse-pane-position = 54.947368;
       browse-preview-visible = true;
-      content-size = 39.96937212863706;
+      content-size = 39.969372;
       mode = "browse";
-      sidebar-size = 32.94736842105263;
+      sidebar-size = 32.947368;
       window-size = mkTuple [
         950
         700
@@ -53,20 +42,21 @@ with lib.hm.gvariant;
       enabled-applets = [
         "panel1:left:0:menu@cinnamon.org:0"
         "panel1:center:0:grouped-window-list@cinnamon.org:2"
-        "panel1:right:2:notifications@cinnamon.org:5"
+        "panel1:right:4:notifications@cinnamon.org:5"
         "panel2:center:0:calendar@cinnamon.org:13"
-        "panel1:right:6:cornerbar@cinnamon.org:14"
+        "panel1:right:8:cornerbar@cinnamon.org:14"
         "panel2:left:0:workspace-switcher@cinnamon.org:15"
-        "panel1:right:4:trash@cinnamon.org:17"
-        "panel1:right:1:nightlight@cinnamon.org:18"
-        "panel1:right:0:sound-switcher@irishbruse:21"
+        "panel1:right:6:trash@cinnamon.org:17"
+        "panel1:right:3:nightlight@cinnamon.org:18"
+        "panel2:right:1:power@cinnamon.org:22"
+        "panel2:right:0:network@cinnamon.org:23"
       ];
       enabled-desklets = [ ];
       enabled-extensions = [ "transparent-panels@germanfr" ];
-      next-applet-id = 22;
+      next-applet-id = 24;
       panel-edit-mode = false;
       panel-zone-icon-sizes = "[{\"panelId\":1,\"left\":0,\"center\":0,\"right\":24},{\"left\":0,\"center\":0,\"right\":0,\"panelId\":2}]";
-      panel-zone-symbolic-icon-sizes = "[{\"panelId\": 1, \"left\": 28, \"center\": 28, \"right\": 16}, {\"left\": 28, \"center\": 29, \"right\": 28, \"panelId\": 2}]";
+      panel-zone-symbolic-icon-sizes = "[{\"panelId\": 1, \"left\": 28, \"center\": 28, \"right\": 16}, {\"left\": 28, \"center\": 29, \"right\": 16, \"panelId\": 2}]";
       panel-zone-text-sizes = "[{\"panelId\": 1, \"left\": 0, \"center\": 0, \"right\": 0}, {\"left\": 0.0, \"center\": 11.0, \"right\": 0, \"panelId\": 2}]";
       panels-autohide = [
         "1:false"
@@ -112,7 +102,7 @@ with lib.hm.gvariant;
     };
 
     "org/cinnamon/desktop/background" = {
-      picture-uri = "file:///nix/store/ard6i0gl3zb26qjp32204hndbjqr7hz2-complete-8.png";
+      picture-uri = "file:///home/filo/dotfiles/configs/backgrounds/complete-8.png";
     };
 
     "org/cinnamon/desktop/background/slideshow" = {
@@ -430,7 +420,6 @@ with lib.hm.gvariant;
       sort-order = 0;
     };
 
-    # Reduce input lag.
     "org/gnome/mutter" = {
       experimental-features = [ "variable-refresh-rate" ];
     };
@@ -510,7 +499,7 @@ with lib.hm.gvariant;
       bookmarks-expanded = true;
       geometry = "800x550+159+152";
       maximized = true;
-      sidebar-bookmark-breakpoint = 2;
+      sidebar-bookmark-breakpoint = 1;
       start-with-sidebar = true;
     };
 
@@ -540,7 +529,7 @@ with lib.hm.gvariant;
     "org/x/editor/plugins/filebrowser/on-load" = {
       root = "file:///";
       tree-view = true;
-      virtual-root = "file:///home/filo/.vscode";
+      virtual-root = "file:///nix/store/px1kfpdn891a4w6y1hqq504bchv491w5-cinnamon-6.6.8/share/desktop-directories";
     };
 
     "org/x/editor/preferences/ui" = {
@@ -624,5 +613,6 @@ with lib.hm.gvariant;
       connect-id = "NIXOS-778E81C7CA2BDB3BD608";
       no-overwrite = true;
     };
+
   };
 }
