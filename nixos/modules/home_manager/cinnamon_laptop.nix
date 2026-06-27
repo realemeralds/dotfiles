@@ -101,8 +101,9 @@ with lib.hm.gvariant;
       exec-arg = "--";
     };
 
+    # Nix store is needed for greeter.
     "org/cinnamon/desktop/background" = {
-      picture-uri = "file:///home/filo/dotfiles/configs/backgrounds/complete-8.png";
+      picture-uri = "file:///nix/store/ivh72w9jbrjbn2hv0p49683q4rixav0g-complete-8.png";
     };
 
     "org/cinnamon/desktop/background/slideshow" = {
