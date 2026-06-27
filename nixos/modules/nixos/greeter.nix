@@ -10,5 +10,8 @@
       name = "Iosevka Nerd Font Mono 12";
       package = pkgs.nerd-fonts.iosevka;
     };
+    extraConfig = ''
+      logo=nix-snowflake-white
+    '';
   };
 }
