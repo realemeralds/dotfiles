@@ -11,9 +11,6 @@
       ];
     };
 
-    # Required for Plymouth to work properly
-    initrd.systemd.enable = true;
-
     # Enable "Silent boot"
     consoleLogLevel = 3;
     initrd.verbose = false;
