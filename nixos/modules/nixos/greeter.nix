@@ -11,7 +11,8 @@
       package = pkgs.nerd-fonts.iosevka;
     };
     extraConfig = ''
-      logo=nix-snowflake-white
+      logo=/nix/store/scb01pl8b2wly3mpihk1f34bzs5j7p58-system-path/share/icons/hicolor/1024x1024/apps/nix-snowflake-white.png
+      show-keyboard=false
     '';
   };
 }
