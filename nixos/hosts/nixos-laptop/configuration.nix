@@ -15,6 +15,7 @@
     ./hardware-configuration.nix
     inputs.home-manager.nixosModules.default
     inputs.sops-nix.nixosModules.sops
+    inputs.nixos-hardware.nixosModules.hp-laptop-15s-fq1xxx
 
     # Basics
     ../../modules/nixos/boot.nix

@@ -4,6 +4,11 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
 
+    nixos-hardware = {
+      url = "github:NixOS/nixos-hardware";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -40,6 +45,7 @@
         modules = [
           ./hosts/nixos-laptop/configuration.nix
           inputs.home-manager.nixosModules.default
+          inputs.nixos-hardware.nixosModules.hp-laptop-15s-fq1xxx
         ];
       };
     };
