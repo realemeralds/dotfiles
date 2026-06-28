@@ -30,6 +30,7 @@
     ../../modules/nixos/zsh.nix
 
     # Applications
+    # ../../modules/nixos/beeper.nix
     ../../modules/nixos/neofetch.nix
     ../../modules/nixos/restic.nix
     ../../modules/nixos/samba.nix
@@ -59,7 +60,7 @@
 
   # Set your time zone.
   time.timeZone = "Asia/Singapore";
-  time.hardwareClockInLocalTime = true; # https://wiki.nixos.org/wiki/Dual_Booting_NixOS_and_Windows
+  time.hardwareClockInLocalTime = false; # https://wiki.nixos.org/wiki/Dual_Booting_NixOS_and_Windows
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_GB.UTF-8";
