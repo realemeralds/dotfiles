@@ -103,7 +103,11 @@ with lib.hm.gvariant;
 
     # Nix store is needed for greeter.
     "org/cinnamon/desktop/background" = {
-      picture-uri = "file:///nix/store/ivh72w9jbrjbn2hv0p49683q4rixav0g-complete-8.png";
+      picture-uri =
+        let
+          background = ../../../configs/backgrounds/complete-8.png;
+        in
+        "${background}";
     };
 
     "org/cinnamon/desktop/background/slideshow" = {
