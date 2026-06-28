@@ -107,7 +107,7 @@ with lib.hm.gvariant;
         let
           background = ../../../configs/backgrounds/complete-8.png;
         in
-        "${background}";
+        "file://${background}";
     };
 
     "org/cinnamon/desktop/background/slideshow" = {

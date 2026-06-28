@@ -10,6 +10,7 @@
       user.email = "102229990+realemeralds@users.noreply.github.com";
 
       push.autoSetupRemote = true;
+      pull.rebase = false;
       init.defaultBranch = "main";
     };
   };
