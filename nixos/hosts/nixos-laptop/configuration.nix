@@ -55,8 +55,9 @@
     "flakes"
   ];
 
-  # Enable networking
+  # Enable networking and bluetooth
   networking.networkmanager.enable = true;
+  hardware.bluetooth.enable = true;
 
   # Set your time zone.
   time.timeZone = "Asia/Singapore";
