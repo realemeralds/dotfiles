@@ -89,6 +89,7 @@
         [
           jnoortheen.nix-ide
           ms-vscode.cpptools-extension-pack
+          ms-vscode.cpptools
           mkhl.direnv
           tamasfe.even-better-toml
           aaron-bond.better-comments
