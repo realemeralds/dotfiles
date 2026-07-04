@@ -30,7 +30,6 @@
     ../../modules/nixos/zsh.nix
 
     # Applications
-    # ../../modules/nixos/beeper.nix
     ../../modules/nixos/neofetch.nix
     ../../modules/nixos/restic.nix
     ../../modules/nixos/samba.nix
