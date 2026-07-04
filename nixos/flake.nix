@@ -45,7 +45,7 @@
         modules = [
           ./hosts/nixos-laptop/configuration.nix
           inputs.home-manager.nixosModules.default
-          inputs.nixos-hardware.nixosModules.hp-laptop-14s-dq2024nf
+          # inputs.nixos-hardware.nixosModules.hp-laptop-14s-dq2024nf
         ];
       };
     };
