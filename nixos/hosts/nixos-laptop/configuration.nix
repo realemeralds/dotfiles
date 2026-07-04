@@ -19,12 +19,12 @@
 
     # Basics
     ../../modules/nixos/boot.nix
-    # ../../modules/nixos/plymouth.nix
     ../../modules/nixos/fonts.nix
     ../../modules/nixos/gc.nix
     ../../modules/nixos/greeter.nix
     ../../modules/nixos/icons.nix
     ../../modules/nixos/libinput.nix
+    ../../modules/nixos/nm.nix
     ../../modules/nixos/python.nix
     ../../modules/nixos/sops.nix
     ../../modules/nixos/sound.nix
@@ -33,15 +33,10 @@
 
     # Applications
     ../../modules/nixos/neofetch.nix
-    # ../../modules/nixos/restic.nix
     ../../modules/nixos/samba.nix
     ../../modules/nixos/spotify.nix
-    # ../../modules/nixos/steam.nix
-    # ../../modules/nixos/sunshine.nix
     ../../modules/nixos/syncthing.nix
     ../../modules/nixos/moonlight.nix
-    # ../../modules/nixos/postfix.nix
-    # ../../modules/nixos/prism.nix
   ];
 
   networking.hostName = "nixos-laptop"; # Define your hostname.
