@@ -40,7 +40,7 @@
           "other" = "on";
           "strings" = "off";
         };
-        "editor.tabSize" = 2;
+        "editor.tabSize" = 4;
         "debug.onTaskErrors" = "abort";
 
         "[nix]" = {

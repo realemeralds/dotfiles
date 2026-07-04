@@ -1,12 +1,20 @@
 [
     {
-        "key": "ctrl+shift+c",
         "command": "editor.action.addCommentLine",
+        "key": "ctrl+shift+c",
         "when": "editorTextFocus && !editorReadonly"
     },
     {
-        "key": "ctrl+shift+x",
         "command": "editor.action.removeCommentLine",
+        "key": "ctrl+shift+x",
         "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "alt+left",
+        "command": "workbench.action.toggleSidebarVisibility"
+    },
+    {
+        "key": "alt+right",
+        "command": "workbench.action.toggleAuxiliaryBar"
     }
 ]
