@@ -18,6 +18,6 @@
       target = ".config/hyfetch.json";
     };
 
-    home.stateVersion = "26.11"; # Match your current state version
+    home.stateVersion = "26.05"; # Match your current state version
   };
 }

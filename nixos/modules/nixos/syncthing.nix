@@ -3,7 +3,7 @@
     services.syncthing = {
       enable = true;
     };
-    home.stateVersion = "26.11"; # Match your current state version
+    home.stateVersion = "26.05"; # Match your current state version
   };
 
   # port 8384  is the default port to allow access from the network.
