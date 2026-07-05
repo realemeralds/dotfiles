@@ -60,6 +60,9 @@
                 "expr" =
                   "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options.home-manager.users.type.getSubOptions []";
               };
+              "sops-nix" = {
+                "expr" = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options.sops";
+              };
             };
             "diagnostic" = {
               "suppress" = [
