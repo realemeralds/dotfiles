@@ -121,6 +121,10 @@
     users = {
       "filo" = import ./home.nix;
     };
+    # https://github.com/nix-community/nixd/issues/705
+    sharedModules = [
+      inputs.nixcord.homeModules.nixcord
+    ];
   };
 
   # Allow unfree packages
