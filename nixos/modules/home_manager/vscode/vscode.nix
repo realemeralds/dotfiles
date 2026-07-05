@@ -46,6 +46,7 @@
         "[nix]" = {
           "editor.defaultFormatter" = "jnoortheen.nix-ide";
           "editor.formatOnSave" = true;
+          "editor.tabSize" = 2;
         };
         "nix.enableLanguageServer" = true;
         "nix.serverPath" = "nixd";
