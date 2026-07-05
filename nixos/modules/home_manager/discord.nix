@@ -40,9 +40,17 @@
       ];
       frameless = true;
 
-      # plugins = {
-      #   hideMedia.enable = true;
-      # };
+      plugins = {
+        readAllNotificationsButton.enable = true;
+        noProfileThemes.enable = true;
+        colorSighted.enable = true;
+        reverseImageSearch.enable = true;
+        openInApp.enable = true;
+        fakeNitro.enable = true;
+        clearUrls.enable = true;
+        noBlockedMessages.enable = true;
+        youtubeAdblock.enable = true;
+      };
     };
   };
 }
