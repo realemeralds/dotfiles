@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
-Exec=flatpak run com.discordapp.Discord --start-minimized
+Exec=discord --start-minimized
 X-GNOME-Autostart-enabled=true
 NoDisplay=false
 Hidden=false
