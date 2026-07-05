@@ -5,9 +5,17 @@
     cifs-utils
     # samba # For debugging
   ];
+
   networking.firewall.extraCommands = ''
     iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns
   '';
+
+  sops.secrets."network-manager.env" = {
+    sopsFile = ../../secrets/smb.env;
+    path = "/etc/nixos/smb-secrets";
+    format = "dotenv";
+  };
+
   fileSystems."/mnt/filofiles" = {
     device = "//192.168.1.69/filofiles";
     fsType = "cifs";
