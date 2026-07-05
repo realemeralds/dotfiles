@@ -1,8 +1,4 @@
-{ inputs, ... }: {
-  imports = [
-    inputs.nixcord.homeModules.nixcord
-  ];
-
+{
   home.file."discord_autostart" = {
     enable = true;
     source = ./../../../configs/discord.desktop;
