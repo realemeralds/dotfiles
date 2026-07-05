@@ -49,4 +49,8 @@
 
   # own settings
   services.fstrim.enable = lib.mkDefault true;
+  services.xserver.videoDrivers = [ "nvidia" ];
+  hardware.nvidia.open = false; # see the note above
+  hardware.nvidia.package = config.boot.kernelPackages.nvidiaPackages.legacy_580;
+  hardware.nvidia.modesetting.enable = true;
 }

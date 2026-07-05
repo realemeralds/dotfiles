@@ -1,4 +1,7 @@
 { config, pkgs, ... }: {
+  imports = [
+    ./postfix.nix
+  ];
 
   nixpkgs.overlays = [
     (final: prev: {

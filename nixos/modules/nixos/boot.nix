@@ -1,5 +1,6 @@
 { pkgs, ... }: {
   boot.loader = {
+    timeout = 2;
     systemd-boot.enable = false;
 
     efi = {

@@ -37,7 +37,6 @@
     ../../modules/nixos/steam.nix
     ../../modules/nixos/sunshine.nix
     ../../modules/nixos/syncthing.nix
-    ../../modules/nixos/postfix.nix
     ../../modules/nixos/prism.nix
   ];
 
