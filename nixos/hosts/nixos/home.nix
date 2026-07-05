@@ -1,8 +1,15 @@
-{ config, pkgs, ... }:
+{
+  inputs,
+  config,
+  pkgs,
+  ...
+}:
 
 {
   # Import Home Manager modules
   imports = [
+    inputs.nixcord.homeModules.nixcord
+
     ../../modules/home_manager/vscode/vscode.nix
     ../../modules/home_manager/conky.nix
     ../../modules/home_manager/cinnamon.nix
