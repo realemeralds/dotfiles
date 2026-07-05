@@ -56,9 +56,12 @@
               "command" = [ "nixfmt" ];
             };
             options = {
-              "home-manager" = {
-                "expr" =
-                  "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options.home-manager.users.type.getSubOptions []";
+              # "home-manager" = {
+              #   "expr" =
+              #     "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options.home-manager.users.type.getSubOptions []";
+              # };
+              "nixos" = {
+                "expr" = "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options";
               };
             };
             "diagnostic" = {
