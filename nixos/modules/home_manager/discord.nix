@@ -20,11 +20,17 @@
     discord.krisp.enable = true;
 
     # Theming
-    quickCss = "/* css goes here */";
+    quickCss = ''
+      :root {
+        
+      }
+    '';
     config = {
-      # useQuickCss = true;
+      useQuickCss = true;
       themeLinks = [
         "https://raw.githubusercontent.com/ClearVision/ClearVision-v7/master/ClearVision-v7.theme.css"
+        "https://raw.githubusercontent.com/DiscordStyles/DarkMatter/3ac5b187799ad90f59d4201b0b91725a92674e43/DarkMatter.theme.css"
+        "https://raw.githubusercontent.com/DiscordStyles/FrostedGlass/c87ce3498268bdb3757f20858365c1f4f505cec3/dist/FrostedGlass.theme.css"
       ];
       frameless = true;
 
