@@ -23,9 +23,9 @@
     quickCss = "/* css goes here */";
     config = {
       # useQuickCss = true;
-      # themeLinks = [
-      #   "https://raw.githubusercontent.com/link/to/some/theme.css"
-      # ];
+      themeLinks = [
+        "https://raw.githubusercontent.com/ClearVision/ClearVision-v7/master/ClearVision-v7.theme.css"
+      ];
       frameless = true;
 
       # plugins = {
