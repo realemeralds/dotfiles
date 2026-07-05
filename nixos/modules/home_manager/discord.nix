@@ -1,6 +1,6 @@
 {
   programs.nixcord = {
-    enable = false;
+    enable = true;
 
     # Choose your Discord mod client (enable at most one of these two)
     # discord.vencord.enable = true; # Standard Vencord
