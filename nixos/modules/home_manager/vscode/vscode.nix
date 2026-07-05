@@ -58,7 +58,8 @@
             options = {
               "home-manager" = {
                 "expr" =
-                  "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.options.home-manager.users.type.getSubOptions []";
+                  # https://github.com/nix-community/nixd/issues/705
+                  "(builtins.getFlake (builtins.toString ./.)).nixosConfigurations.nixos.config.home-manager.users.filo";
               };
             };
             "diagnostic" = {

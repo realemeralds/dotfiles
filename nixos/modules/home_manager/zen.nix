@@ -1,7 +1,7 @@
 { inputs, ... }: {
   # Imports are in configuration.nix
   imports = [
-    # inputs.zen-browser.homeModules.twilight
+    inputs.zen-browser.homeModules.twilight
     # or inputs.zen-browser.homeModules.beta
     # or inputs.zen-browser.homeModules.twilight-official
   ];
