@@ -11,6 +11,8 @@
     # dorion.enable = true;
     # legcord.enable = true;
 
+    discord.krisp.enable = true;
+
     # Theming
     quickCss = "/* css goes here */";
     config = {
