@@ -33,7 +33,6 @@
 
     # Applications
     ../../modules/nixos/neofetch.nix
-    ../../modules/nixos/samba.nix
     ../../modules/nixos/spotify.nix
     ../../modules/nixos/syncthing.nix
     ../../modules/nixos/moonlight.nix
@@ -121,6 +120,10 @@
     users = {
       "filo" = import ./home.nix;
     };
+    sharedModules = [
+      inputs.nixcord.homeModules.nixcord
+      inputs.zen-browser.homeModules.twilight
+    ];
   };
 
   # Allow unfree packages

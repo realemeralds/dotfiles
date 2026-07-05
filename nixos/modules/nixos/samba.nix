@@ -24,7 +24,7 @@ in
     iptables -t raw -A OUTPUT -p udp -m udp --dport 137 -j CT --helper netbios-ns
   '';
 
-  sops.secrets."network-manager.env" = {
+  sops.secrets."smb.env" = {
     sopsFile = ../../secrets/smb.env;
     path = "/etc/nixos/smb-secrets";
     format = "dotenv";
