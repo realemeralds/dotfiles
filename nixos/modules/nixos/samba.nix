@@ -1,4 +1,18 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
+let
+  shares = [
+    "filofiles"
+    "filo"
+    "sharedfiles"
+    "backup"
+  ];
+
+  automount_opts =
+    "x-systemd.automount,noauto,"
+    + "x-systemd.idle-timeout=60,"
+    + "x-systemd.device-timeout=5s,"
+    + "x-systemd.mount-timeout=5s";
+in
 {
   # For mount.cifs, required unless domain name resolution is not needed.
   environment.systemPackages = with pkgs; [
@@ -16,60 +30,17 @@
     format = "dotenv";
   };
 
-  fileSystems."/mnt/filofiles" = {
-    device = "//192.168.1.69/filofiles";
-    fsType = "cifs";
-    options =
-      let
-        # this line prevents hanging on network split
-        automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
-
-      in
-      [
-        "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
-        "nofail"
-      ];
-  };
-  fileSystems."/mnt/filo" = {
-    device = "//192.168.1.69/filo";
-    fsType = "cifs";
-    options =
-      let
-        # this line prevents hanging on network split
-        automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
-
-      in
-      [
-        "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
-        "nofail"
-      ];
-  };
-  fileSystems."/mnt/sharedfiles" = {
-    device = "//192.168.1.69/sharedfiles";
-    fsType = "cifs";
-    options =
-      let
-        # this line prevents hanging on network split
-        automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
-
-      in
-      [
-        "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
-        "nofail"
-      ];
-  };
-  fileSystems."/mnt/backup" = {
-    device = "//192.168.1.69/backup";
-    fsType = "cifs";
-    options =
-      let
-        # this line prevents hanging on network split
-        automount_opts = "x-systemd.automount,noauto,x-systemd.idle-timeout=60,x-systemd.device-timeout=5s,x-systemd.mount-timeout=5s";
-
-      in
-      [
-        "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
-        "nofail"
-      ];
-  };
+  fileSystems = builtins.listToAttrs (
+    map (share: {
+      name = "/mnt/${share}";
+      value = {
+        device = "//192.168.1.69/${share}";
+        fsType = "cifs";
+        options = [
+          "${automount_opts},credentials=/etc/nixos/smb-secrets,uid=1000,gid=100"
+          "nofail"
+        ];
+      };
+    }) shares
+  );
 }
