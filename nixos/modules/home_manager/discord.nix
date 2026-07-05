@@ -27,6 +27,9 @@
     # '';
     config = {
       # useQuickCss = true;
+      enabledThemeLinks = [
+        "https://raw.githubusercontent.com/orblazer/discord-nordic/99e6edc29239df004a99dd4e79a724f089edcbb8/nordic.theme.css"
+      ];
       themeLinks = [
         "https://raw.githubusercontent.com/ClearVision/ClearVision-v7/master/ClearVision-v7.theme.css"
         "https://raw.githubusercontent.com/DiscordStyles/DarkMatter/3ac5b187799ad90f59d4201b0b91725a92674e43/DarkMatter.theme.css"
