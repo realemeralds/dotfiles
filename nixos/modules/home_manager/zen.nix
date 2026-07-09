@@ -65,7 +65,7 @@ in
     };
     profiles.default = {
       settings = {
-        "zen.view.compact.enable-at-startup" = true;
+        "zen.view.compact.enable-at-startup" = false;
         "zen.view.compact.hide-toolbar" = true;
         "zen.view.compact.toolbar-flash-popup" = true;
         "zen.view.grey-out-inactive-windows" = false;
