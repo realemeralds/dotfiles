@@ -87,15 +87,9 @@
         "evenBetterToml.formatter.indentTables" = true;
         "vscord.app.name" = "Visual Studio Code";
         "vscord.status.problems.enabled" = false;
-        "vscord.status.image.large.debugging.key" =
-          "https://cp.filo.party/shareddocs/profile/deadpan01.png?k=GVxT";
-        "vscord.status.image.large.editing.key" =
-          "https://cp.filo.party/shareddocs/profile/deadpan01.png?k=GVxT";
         "vscord.status.image.large.idle.key" =
           "https://cp.filo.party/shareddocs/profile/deadpan01.png?k=GVxT";
         "vscord.status.image.large.notInFile.key" =
-          "https://cp.filo.party/shareddocs/profile/deadpan01.png?k=GVxT";
-        "vscord.status.image.large.viewing.key" =
           "https://cp.filo.party/shareddocs/profile/deadpan01.png?k=GVxT";
       };
       languageSnippets.cpp = lib.importJSON ./cpp.json;
