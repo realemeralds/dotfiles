@@ -27,6 +27,7 @@ let
   );
 in
 {
+  # TODO: Declarative bookmarks and pinned tabs.
   # Imports are in configuration.nix
   imports = [
     # inputs.zen-browser.homeModules.twilight
