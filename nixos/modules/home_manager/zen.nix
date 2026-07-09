@@ -111,10 +111,10 @@ in
 
       search = {
         force = true; # Enforce declared search engines on each rebuild
-        default = "Google";
+        default = "google";
         privateDefault = "ddg";
         order = [
-          "Google"
+          "google"
           "Github"
           "ddg"
           "NixOS Packages"
