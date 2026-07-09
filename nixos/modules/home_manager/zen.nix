@@ -111,6 +111,17 @@ in
       search = {
         force = true; # Enforce declared search engines on each rebuild
         default = "Google";
+        privateDefault = "ddg";
+        order = [
+          "Google"
+          "Github"
+          "ddg"
+          "NixOS Packages"
+          "NixOS Options"
+          "NixOS Wiki"
+          "Home Manager"
+          "Noogle"
+        ];
         engines =
           let
             nix-icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
@@ -192,8 +203,15 @@ in
                 }
               ];
               icon = github-icon;
-              definedAliases = [ "@gh" ];
+              definedAliases = [
+                "@gh"
+                "@github"
+              ];
             };
+            google.metaData.alias = "@g"; # builtin engines only support specifying one additional alias
+            google.metaData.hidden = true;
+            bing.metaData.hidden = true;
+            ebay.metaData.hidden = true;
           };
       };
     };
