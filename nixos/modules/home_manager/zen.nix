@@ -210,7 +210,6 @@ in
               ];
             };
             google.metaData.alias = "@g"; # builtin engines only support specifying one additional alias
-            google.metaData.hidden = true;
             bing.metaData.hidden = true;
             ebay.metaData.hidden = true;
           };
