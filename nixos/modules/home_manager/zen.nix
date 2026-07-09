@@ -2,6 +2,13 @@
 let
   mkPluginUrl = id: "https://addons.mozilla.org/firefox/downloads/latest/${id}/latest.xpi";
 
+  mkLockedAttrs = builtins.mapAttrs (
+    _: value: {
+      Value = value;
+      Status = "locked";
+    }
+  );
+
   mkExtensionEntry =
     {
       id,
@@ -45,6 +52,9 @@ in
         Locked = true;
         Cryptomining = true;
         Fingerprinting = true;
+      };
+      Preferences = mkLockedAttrs {
+        "browser.aboutConfig.showWarning" = false;
       };
       ExtensionSettings = mkExtensionSettings {
         "{446900e4-71c2-419f-a6a7-df9c091e268b}" = mkExtensionEntry {
@@ -100,34 +110,91 @@ in
 
       search = {
         force = true; # Enforce declared search engines on each rebuild
-        default = "ddg";
-        engines = {
-          mynixos = {
-            name = "My NixOS";
-            urls = [
-              {
-                template = "https://mynixos.com/search?q={searchTerms}";
-                params = [
-                  {
-                    name = "query";
-                    value = "searchTerms";
-                  }
-                ];
-              }
-            ];
-            icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
-            definedAliases = [ "@nx" ];
+        default = "Google";
+        engines =
+          let
+            nix-icon = "${pkgs.nixos-icons}/share/icons/hicolor/scalable/apps/nix-snowflake.svg";
+            github-icon = "https://github.com/favicon.ico";
+          in
+          {
+            "NixOS Packages" = {
+              urls = [
+                {
+                  template = "https://search.nixos.org/packages";
+                  params = [
+                    {
+                      name = "type";
+                      value = "packages";
+                    }
+                    {
+                      name = "query";
+                      value = "{searchTerms}";
+                    }
+                  ];
+                }
+              ];
+              icon = nix-icon;
+              definedAliases = [
+                "@np"
+                "@nixpkgs"
+              ];
+            };
+            "NixOS Options" = {
+              urls = [
+                {
+                  template = "https://search.nixos.org/options";
+                  params = [
+                    {
+                      name = "type";
+                      value = "packages";
+                    }
+                    {
+                      name = "query";
+                      value = "{searchTerms}";
+                    }
+                  ];
+                }
+              ];
+              icon = nix-icon;
+              definedAliases = [
+                "@no"
+                "@nixopts"
+              ];
+            };
+            "NixOS Wiki" = {
+              urls = [ { template = "https://nixos.wiki/index.php?search={searchTerms}"; } ];
+              icon = nix-icon;
+              updateInterval = 24 * 60 * 60 * 1000; # every day
+              definedAliases = [ "@nw" ];
+            };
+            "Home Manager" = {
+              urls = [ { template = "https://home-manager-options.extranix.com/?query={searchTerms}"; } ];
+              icon = "https://home-manager-options.extranix.com/images/favicon.png";
+              definedAliases = [
+                "@hm"
+                "@home"
+              ];
+            };
+            "Noogle" = {
+              urls = [ { template = "https://noogle.dev/q?term={searchTerms}"; } ];
+              icon = nix-icon;
+              updateInterval = 24 * 60 * 60 * 1000;
+              definedAliases = [
+                "@noogle"
+                "@ng"
+              ];
+            };
+            "Github" = {
+              name = "GitHub";
+              urls = [
+                {
+                  template = "https://github.com/search?q={searchTerms}";
+                }
+              ];
+              icon = github-icon;
+              definedAliases = [ "@gh" ];
+            };
           };
-          github = {
-            name = "GitHub Search";
-            urls = [
-              {
-                template = "https://github.com/search?q={searchTerms}";
-              }
-            ];
-            definedAliases = [ "@gh" ];
-          };
-        };
       };
     };
   };
