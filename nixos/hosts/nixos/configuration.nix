@@ -37,7 +37,7 @@
     ../../modules/nixos/steam.nix
     ../../modules/nixos/sunshine.nix
     ../../modules/nixos/syncthing.nix
-    ../../modules/nixos/prism.nix
+    ../../modules/nixos/mcsr.nix
   ];
 
   networking.hostName = "nixos"; # Define your hostname.
