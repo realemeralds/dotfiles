@@ -33,6 +33,7 @@
 
     # Applications
     ../../modules/nixos/neofetch.nix
+    ../../modules/nixos/steam.nix
     ../../modules/nixos/spotify.nix
     ../../modules/nixos/syncthing.nix
     ../../modules/nixos/moonlight.nix
