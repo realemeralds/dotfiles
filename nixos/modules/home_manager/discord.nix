@@ -50,6 +50,7 @@
         clearUrls.enable = true;
         noBlockedMessages.enable = true;
         youtubeAdblock.enable = true;
+        customSounds.enable = true;
       };
     };
   };
