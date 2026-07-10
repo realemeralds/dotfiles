@@ -52,8 +52,8 @@
         youtubeAdblock.enable = true;
         customSounds = {
           enable = true;
-          # callCalling = "{\"enabled\":true,\"selectedSound\":\"custom\",\"volume\":100,\"useFile\":false,\"selectedFileId\":\"75f26f84-b836-423b-ae34-32ada2dbe669\"}";
-          # callRinging = "{\"enabled\":true,\"selectedSound\":\"custom\",\"volume\":100,\"useFile\":false,\"selectedFileId\":\"87fd4a3e-b5b8-4a01-9b27-ed837dcf1db8\"}";
+          callCalling = "{\"enabled\":true,\"selectedSound\":\"custom\",\"volume\":100,\"useFile\":false,\"selectedFileId\":\"a36ab575-599f-4947-941a-54f79f0a0a1c\"}";
+          callRinging = "{\"enabled\":true,\"selectedSound\":\"custom\",\"volume\":100,\"useFile\":false,\"selectedFileId\":\"a36ab575-599f-4947-941a-54f79f0a0a1c\"}";
         }; # not declarative!
       };
     };
