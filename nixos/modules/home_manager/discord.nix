@@ -13,7 +13,7 @@
     discord.equicord.enable = true; # Equicord (has more plugins)
 
     # Or these
-    vesktop.enable = true;
+    # vesktop.enable = true;
     # dorion.enable = true;
     # legcord.enable = true;
 
