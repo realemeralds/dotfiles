@@ -1,8 +1,15 @@
-{
+{ pkgs, ... }: {
   home.file."discord_autostart" = {
     enable = true;
     source = ./../../../configs/discord.desktop;
     target = ".config/autostart/discord.desktop";
+  };
+
+  # https://wiki.nixos.org/wiki/Discord
+  services.arrpc = {
+    enable = true;
+    package = pkgs.arrpc; # Default
+    systemdTarget = "graphical-session.target"; # Default
   };
 
   programs.nixcord = {
