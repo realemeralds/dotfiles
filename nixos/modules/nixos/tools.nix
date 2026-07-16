@@ -13,5 +13,6 @@
     lm_sensors
     lsb-release
     tldr
+    libreoffice
   ];
 }
