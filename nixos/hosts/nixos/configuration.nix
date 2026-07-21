@@ -24,6 +24,7 @@
     ../../modules/nixos/icons.nix
     ../../modules/nixos/libinput.nix
     ../../modules/nixos/python.nix
+    ../../modules/nixos/ssh.nix
     ../../modules/nixos/sops.nix
     ../../modules/nixos/sound.nix
     ../../modules/nixos/tools.nix
