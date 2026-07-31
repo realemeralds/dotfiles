@@ -12,10 +12,11 @@
     openFirewall = true;
   };
 
-  services.sunshine.package = pkgs.sunshine.override {
-    cudaSupport = true;
-    cudaPackages = pkgs.cudaPackages;
-  };
+  # https://github.com/moonlight-stream/moonlight-docs/wiki/Troubleshooting
+  #  services.sunshine.package = pkgs.sunshine.override {
+  #    cudaSupport = true;
+  #    cudaPackages = pkgs.cudaPackages;
+  #  };
 
   security.wrappers.sunshine = {
     owner = "root";

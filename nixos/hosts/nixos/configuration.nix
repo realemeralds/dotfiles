@@ -24,12 +24,14 @@
     ../../modules/nixos/icons.nix
     ../../modules/nixos/libinput.nix
     ../../modules/nixos/python.nix
+    ../../modules/nixos/ssh.nix
     ../../modules/nixos/sops.nix
     ../../modules/nixos/sound.nix
     ../../modules/nixos/tools.nix
     ../../modules/nixos/zsh.nix
 
     # Applications
+    ../../modules/nixos/itch.nix
     ../../modules/nixos/neofetch.nix
     ../../modules/nixos/restic.nix
     ../../modules/nixos/samba.nix
@@ -37,7 +39,7 @@
     ../../modules/nixos/steam.nix
     ../../modules/nixos/sunshine.nix
     ../../modules/nixos/syncthing.nix
-    ../../modules/nixos/prism.nix
+    ../../modules/nixos/mcsr.nix
   ];
 
   networking.hostName = "nixos"; # Define your hostname.
@@ -58,7 +60,7 @@
 
   # Set your time zone.
   time.timeZone = "Asia/Singapore";
-  time.hardwareClockInLocalTime = false; # https://wiki.nixos.org/wiki/Dual_Booting_NixOS_and_Windows
+  time.hardwareClockInLocalTime = true; # https://wiki.nixos.org/wiki/Dual_Booting_NixOS_and_Windows
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_GB.UTF-8";

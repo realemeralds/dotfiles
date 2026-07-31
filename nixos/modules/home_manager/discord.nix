@@ -1,8 +1,15 @@
-{
+{ pkgs, ... }: {
   home.file."discord_autostart" = {
     enable = true;
     source = ./../../../configs/discord.desktop;
     target = ".config/autostart/discord.desktop";
+  };
+
+  # https://wiki.nixos.org/wiki/Discord
+  services.arrpc = {
+    enable = true;
+    package = pkgs.arrpc; # Default
+    systemdTarget = "graphical-session.target"; # Default
   };
 
   programs.nixcord = {
@@ -50,6 +57,11 @@
         clearUrls.enable = true;
         noBlockedMessages.enable = true;
         youtubeAdblock.enable = true;
+        customSounds = {
+          enable = true;
+          callCalling = "{\"enabled\":true,\"selectedSound\":\"custom\",\"volume\":100,\"useFile\":false,\"selectedFileId\":\"a36ab575-599f-4947-941a-54f79f0a0a1c\"}";
+          callRinging = "{\"enabled\":true,\"selectedSound\":\"custom\",\"volume\":100,\"useFile\":false,\"selectedFileId\":\"a36ab575-599f-4947-941a-54f79f0a0a1c\"}";
+        }; # not declarative!
       };
     };
   };
