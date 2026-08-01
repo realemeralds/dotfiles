@@ -34,6 +34,7 @@
     # Applications
     ../../modules/nixos/neofetch.nix
     ../../modules/nixos/mcsr.nix
+    ../../modules/nixos/parsec.nix
     ../../modules/nixos/steam.nix
     ../../modules/nixos/spotify.nix
     ../../modules/nixos/syncthing.nix
