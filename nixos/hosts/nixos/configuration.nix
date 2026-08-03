@@ -33,6 +33,7 @@
     # Applications
     ../../modules/nixos/itch.nix
     ../../modules/nixos/neofetch.nix
+    ../../modules/nixos/rare.nix
     ../../modules/nixos/restic.nix
     ../../modules/nixos/samba.nix
     ../../modules/nixos/spotify.nix
