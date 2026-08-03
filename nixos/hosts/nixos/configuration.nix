@@ -32,7 +32,6 @@
 
     # Applications
     ../../modules/nixos/neofetch.nix
-    ../../modules/nixos/heroic.nix
     ../../modules/nixos/itch.nix
     ../../modules/nixos/restic.nix
     ../../modules/nixos/samba.nix
