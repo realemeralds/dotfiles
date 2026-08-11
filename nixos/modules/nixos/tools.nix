@@ -14,5 +14,6 @@
     lsb-release
     tldr
     libreoffice
+    kdePackages.kolourpaint
   ];
 }
