@@ -15,5 +15,7 @@
     tldr
     libreoffice
     kdePackages.kolourpaint
+    gcc
+    gdb
   ];
 }
