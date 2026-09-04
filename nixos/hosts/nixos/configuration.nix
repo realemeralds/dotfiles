@@ -51,9 +51,6 @@
   #   # programs here, NOT in environment.systemPackages
   # ];
 
-  # https://wiki.nixos.org/wiki/Debug_Symbols
-  environment.enableDebugInfo = true;
-
   nix.settings.experimental-features = [
     "nix-command"
     "flakes"
