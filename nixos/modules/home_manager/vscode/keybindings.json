@@ -16,5 +16,10 @@
     {
         "key": "alt+right",
         "command": "workbench.action.toggleAuxiliaryBar"
+    },
+    {
+        "key": "ctrl+c",
+        "command": "-workbench.debug.viewlet.action.copyValue",
+        "when": "!expressionSelected && focusedView == 'workbench.debug.variablesView' || !expressionSelected && focusedView == 'workbench.debug.watchExpressionsView'"
     }
 ]
