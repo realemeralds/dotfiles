@@ -141,8 +141,8 @@ with lib.hm.gvariant;
 
     "org/cinnamon/desktop/keybindings/custom-keybindings/custom0" = {
       binding = [ "<Primary><Shift>Escape" ];
-      command = "gnome-system-monitor";
-      name = "Open System Monitor";
+      command = "resources";
+      name = "Open Resources";
     };
 
     "org/cinnamon/desktop/keybindings/media-keys" = {
