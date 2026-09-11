@@ -20,5 +20,6 @@
     kdePackages.kolourpaint
     gcc
     gdb
+    easyeffects
   ];
 }
