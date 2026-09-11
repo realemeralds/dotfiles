@@ -5,7 +5,10 @@
     nixd
     nixfmt-tree
     libnotify
-    gnome-system-monitor
+    resources
+    mousai
+    gnome-clocks
+    gnome-solanum
     fzf
     rip2
     tree
