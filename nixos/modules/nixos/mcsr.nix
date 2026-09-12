@@ -4,4 +4,10 @@
     waywall
     prismlauncher
   ];
+  networking.firewall.allowedTCPPorts = [
+    6767
+  ];
+  networking.firewall.allowedUDPPorts = [
+    6767
+  ];
 }
