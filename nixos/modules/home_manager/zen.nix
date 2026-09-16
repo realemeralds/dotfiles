@@ -97,7 +97,7 @@ in
         "7190e4e9-bead-4b40-8f57-95d852ddc941" # Tab Title Fixes
       ];
 
-      keyboardShortcutsVersion = 19;
+      keyboardShortcutsVersion = 20;
       keyboardShortcuts = [
         {
           id = "zen-compact-mode-toggle";
