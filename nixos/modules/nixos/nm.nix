@@ -74,6 +74,8 @@
           uuid = "85ea3362-94c0-418d-bd20-b5dec6e2befc";
         };
         ipv4 = {
+          dns = "1.1.1.1;";
+          ignore-auto-dns = "true";
           method = "auto";
         };
         ipv6 = {
