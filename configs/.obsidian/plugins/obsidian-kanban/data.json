@@ -1,0 +1,22 @@
+{
+  "hide-card-count": true,
+  "date-colors": [
+    {
+      "distance": 3,
+      "unit": "days",
+      "direction": "after",
+      "backgroundColor": "rgba(247, 0, 0, 0.58)",
+      "color": "rgba(255, 255, 255, 1)",
+      "isBefore": true
+    },
+    {
+      "distance": 5,
+      "unit": "days",
+      "direction": "after",
+      "backgroundColor": "rgba(255, 228, 0, 0.43)",
+      "color": "rgba(234, 234, 234, 1)"
+    }
+  ],
+  "show-relative-date": true,
+  "move-tags": true,
+}
