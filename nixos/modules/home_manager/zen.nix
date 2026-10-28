@@ -66,6 +66,10 @@ in
           id = "ublock-origin";
           pinned = true;
         };
+        "vpn@proton.ch" = mkExtensionEntry {
+          id = "proton-vpn-firefox-extension ";
+          pinned = true;
+        };
         "moz-addon-prod@7tv.app" = "7tv-extension";
         "{74145f27-f039-47ce-a470-a662b129930a}" = "clearurls";
         "{36bdf805-c6f2-4f41-94d2-9b646342c1dc}" = "export-cookies-txt";
