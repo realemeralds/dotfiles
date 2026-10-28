@@ -103,6 +103,7 @@
           tamasfe.even-better-toml
           aaron-bond.better-comments
           ms-python.python
+          matthewpi.caddyfile-support
         ]
         ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
           {
