@@ -20,6 +20,7 @@
     # Basics
     ../../modules/nixos/boot.nix
     ../../modules/nixos/fonts.nix
+    ../../modules/nixos/fwupd.nix
     ../../modules/nixos/gc.nix
     ../../modules/nixos/greeter.nix
     ../../modules/nixos/icons.nix
