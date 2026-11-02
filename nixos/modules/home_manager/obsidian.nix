@@ -304,7 +304,7 @@ in
     };
     "obsidian_workspace" = {
       source = obsidian_path + "/workspace.json";
-      target = "${obsidian_vault}/workspace.json";
+      target = "${obsidian_vault}/.obsidian/workspace.json";
     };
   };
 }
