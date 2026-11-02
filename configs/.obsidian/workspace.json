@@ -8,22 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "b010c0918d1d54e9",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "webviewer",
-              "state": {
-                "url": "https://calendar.google.com/calendar/u/0/r",
-                "title": "Google Calendar",
-                "mode": "webview"
-              },
-              "pinned": true,
-              "icon": "globe-2",
-              "title": "Google Calendar"
-            }
-          },
-          {
             "id": "e139485db4f21790",
             "type": "leaf",
             "pinned": true,
@@ -42,9 +26,24 @@
               "icon": "lucide-trello",
               "title": "Todo List"
             }
+          },
+          {
+            "id": "b010c0918d1d54e9",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "webviewer",
+              "state": {
+                "url": "https://calendar.google.com/calendar/u/0/r",
+                "title": "Google Calendar",
+                "mode": "webview"
+              },
+              "pinned": true,
+              "icon": "globe-2",
+              "title": "Google Calendar"
+            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -113,7 +112,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 0
       }
     ],
     "direction": "horizontal",
