@@ -30,6 +30,7 @@
     ../../modules/nixos/sops.nix
     ../../modules/nixos/sound.nix
     ../../modules/nixos/tools.nix
+    ../../modules/nixos/update.nix
     ../../modules/nixos/zsh.nix
 
     # Applications
