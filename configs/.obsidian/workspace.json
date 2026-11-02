@@ -1,81 +1,107 @@
 {
   "main": {
-    "id": "1ff1c63d4b33790f",
+    "id": "f06d048780d42f8c",
     "type": "split",
     "children": [
       {
-        "id": "5b4467f7cca6fe5b",
+        "id": "5378c608a5b51dcb",
         "type": "tabs",
         "children": [
           {
-            "id": "460f002180e8cba7",
+            "id": "b010c0918d1d54e9",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "webviewer",
               "state": {
-                "file": "0. filo/Nix 201.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "url": "https://calendar.google.com/calendar/u/0/r",
+                "title": "Google Calendar",
+                "mode": "webview"
               },
-              "icon": "lucide-file",
-              "title": "Nix 201"
+              "pinned": true,
+              "icon": "globe-2",
+              "title": "Google Calendar"
             }
-          }
-        ]
-      },
-      {
-        "id": "2a6ace7504cd3028",
-        "type": "tabs",
-        "children": [
+          },
           {
-            "id": "0f5dc839cc6ea5d6",
+            "id": "e139485db4f21790",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "markdown",
+              "type": "kanban",
               "state": {
-                "file": "3. Areas/Notes/Nix 101.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": false
+                "file": "0. filo/Todo List.md",
+                "kanbanViewState": {
+                  "kanban-plugin": "board",
+                  "list-collapse": [
+                    false
+                  ]
+                }
               },
-              "icon": "lucide-file",
-              "title": "Nix 101"
+              "pinned": true,
+              "icon": "lucide-trello",
+              "title": "Todo List"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "3b8de8801d1edf63",
+    "id": "3aabc3583a4fe167",
     "type": "split",
     "children": [
       {
-        "id": "3c1f34b5e1a14da6",
+        "id": "1bc4f82efcd3a681",
         "type": "tabs",
         "children": [
           {
-            "id": "b95429630830d6a0",
+            "id": "e848fd68a64a689b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "371a0f5c0d35f9c0",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "Files"
             }
           },
           {
-            "id": "2d5a48c6aa99a1f3",
+            "id": "f5ac9e94f0efd14d",
+            "state": {
+              "icon": "stacked-levels",
+              "state": {},
+              "title": "Tag Folder",
+              "type": "tagfolder-view"
+            },
+            "type": "leaf"
+          },
+          {
+            "id": "3f37811f04422d9e",
             "type": "leaf",
             "state": {
               "type": "search",
               "state": {
-                "query": "permutation",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -85,125 +111,13 @@
               "icon": "lucide-search",
               "title": "Search"
             }
-          },
-          {
-            "id": "1bfa8ff733c63673",
-            "type": "leaf",
-            "state": {
-              "type": "bookmarks",
-              "state": {},
-              "icon": "lucide-bookmark",
-              "title": "Bookmarks"
-            }
-          },
-          {
-            "id": "6e48ccceadfc6c93",
-            "type": "leaf",
-            "state": {
-              "type": "tagfolder-view",
-              "state": {},
-              "icon": "stacked-levels",
-              "title": "Tag Folder"
-            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
     "width": 300
-  },
-  "right": {
-    "id": "1b710574367921d0",
-    "type": "split",
-    "children": [
-      {
-        "id": "10e22b77526aeef1",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "6b81066e9af39703",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "2. Projects/Notes/CP - Basics II.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-coming-in",
-              "title": "Backlinks for CP - Basics II"
-            }
-          },
-          {
-            "id": "2ce7b76865bba485",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              },
-              "icon": "links-going-out",
-              "title": "Outgoing links"
-            }
-          },
-          {
-            "id": "d4794613b8dbbf3e",
-            "type": "leaf",
-            "state": {
-              "type": "tag",
-              "state": {
-                "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-tags",
-              "title": "Tags"
-            }
-          },
-          {
-            "id": "93e321caee8c6600",
-            "type": "leaf",
-            "state": {
-              "type": "all-properties",
-              "state": {
-                "sortOrder": "frequency",
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-archive",
-              "title": "All properties"
-            }
-          },
-          {
-            "id": "5f5be7b25e316808",
-            "type": "leaf",
-            "state": {
-              "type": "outline",
-              "state": {
-                "file": "0. filo/Nix 201.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
-              },
-              "icon": "lucide-list",
-              "title": "Outline of Nix 201"
-            }
-          }
-        ],
-        "currentTab": 4
-      }
-    ],
-    "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -214,54 +128,9 @@
       "command-palette:Open command palette": false,
       "workspaces:Manage workspace layouts": false,
       "bases:Create new base": false,
-      "obsidian-trash-explorer:Open trash explorer": false,
-      "obsidian-kanban:Create new board": false,
       "header-adjuster:Adjust headers": false,
-      "obsidian-livesync:P2P Status": false,
-      "obsidian-livesync:Replicate": false,
-      "obsidian-livesync:Show Log": false,
-      "obsidian-livesync:Show Customization sync": false
+      "obsidian-kanban:Create new board": false,
+      "obsidian-trash-explorer:Open trash explorer": false
     }
-  },
-  "active": "460f002180e8cba7",
-  "lastOpenFiles": [
-    "3. Areas/Notes/Nix 101.md",
-    "0. filo/Nix 201.md",
-    "2. Projects/Notes/CP - Complete Search.md",
-    "6. Fleeting/i do best when i set expectations low and then exceed them.md",
-    "2. Projects/Notes/CP - DS II (UFDS, Fenwick).md",
-    "2. Projects/Notes/CP - DP I.md",
-    "2. Projects/Notes/CP - Ad Hoc (Constructive Algos).md",
-    "2. Projects/Notes/CP - Amortised Analysis.md",
-    "2. Projects/Notes/CP - Bit Manipulation, Set Basics.md",
-    "0. filo/Todo List.md",
-    "0. filo/Attachments/Pasted image 20260613210110.png",
-    "0. filo/Attachments/Pasted image 20260613171107.png",
-    "0. filo/Attachments/Pasted image 20260613171014.png",
-    "0. filo/Attachments/Pasted image 20260613170822.png",
-    "0. filo/Attachments/Pasted image 20260613170819.png",
-    "0. filo/Attachments/Pasted image 20260613165948.png",
-    "0. filo/Attachments/Pasted image 20260612191939.png",
-    "0. filo/Health 101.md",
-    "6. Fleeting/get mo tissue.md",
-    "3. Areas/Notes/Home Server 101.md",
-    "3. Areas/Notes/CP 101.md",
-    "2. Projects/Notes/CP - Graph Theory IV (Max Flow).md",
-    "2. Projects/Notes/CP - Math III (Geometry, Matrices, Game Theory).md",
-    "2. Projects/Notes/CP - Graph Theory II (SPA, MST).md",
-    "2. Projects/Notes/CP - Basics II.md",
-    "3. Areas/Notes/Home 101.md",
-    "0. filo/Attachments/Comparison between Ustekinumab and Risankizumab.md",
-    "3. Areas/Notes/Health 101.md",
-    "3. Areas/Area Index.md",
-    "0. filo/Attachments/Skyrizi IBD Patient Booklet - 2026 Version.pdf",
-    "0. filo/Attachments/Steqeyma Patient Guidebook.pdf",
-    "0. filo/Attachments/Comparison between Ustekinumab and Risankizumab.docx",
-    "0. filo/Attachments/WhatsApp Image 2026-06-09 at 19.21.55.jpeg",
-    "6. Fleeting/need to focus on my happiness not accomplishments.md",
-    "6. Fleeting/Need to get more tissue for camp.md",
-    "0. filo/Attachments/Pasted image 20260609111513.png",
-    "2. Projects/Notes/CP - Graph Theory III (Directed Graph Algos, Trees!).md",
-    "1. Subjects/IB/4. Physics/Extra Astrophysics and Olympiad Notes/(SPhL) Rotational Dynamics.md"
-  ]
+  }
 }
