@@ -257,6 +257,12 @@ in
                     ctime = 1780755453504;
                     path = "3. Areas/Notes/Life 201.md";
                   }
+                  {
+                    "type" = "url";
+                    "ctime" = 1793603439162;
+                    "url" = "https://calendar.google.com/calendar/u/0/r";
+                    "title" = "Google Calendar";
+                  }
                 ];
                 title = "101s";
               }
