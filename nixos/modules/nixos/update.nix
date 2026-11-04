@@ -1,7 +1,7 @@
 { inputs, ... }: {
   system.autoUpgrade = {
     enable = true;
-    flake = inputs.self.outPath;
+    flake = "/home/filo/dotfiles/nixos";
     flags = [
       "--print-build-logs"
       "--commit-lock-file" # If you want to automatically commit the updated flake.lock
