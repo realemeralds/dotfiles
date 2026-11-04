@@ -168,7 +168,7 @@ with lib.hm.gvariant;
       accel-profile = "flat";
       double-click = 400;
       drag-threshold = 8;
-      speed = -0.4;
+      speed = -0.42;
     };
 
     "org/cinnamon/desktop/peripherals/touchpad" = {
@@ -300,7 +300,7 @@ with lib.hm.gvariant;
       left-handed = false;
       middle-click-emulation = false;
       natural-scroll = false;
-      speed = -0.4;
+      speed = -0.42;
     };
 
     "org/gnome/desktop/privacy" = {
