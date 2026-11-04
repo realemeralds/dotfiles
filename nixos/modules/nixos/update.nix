@@ -14,7 +14,7 @@
     target = "custom/root_gitconfig";
     text = ''
       [safe]
-        directory = /path/to/flake
+        directory = /home/filo/dotfiles/nixos
     '';
   };
 
