@@ -1,7 +1,7 @@
 {
   system.autoUpgrade = {
     enable = true;
-    flake = "../../flake.nix";
+    flake = "../../";
     flags = [
       "--print-build-logs"
       "--commit-lock-file" # If you want to automatically commit the updated flake.lock
