@@ -1,7 +1,7 @@
-{
+{ inputs, ... }: {
   system.autoUpgrade = {
     enable = true;
-    flake = "./";
+    flake = inputs.self.outPath;
     flags = [
       "--print-build-logs"
       "--commit-lock-file" # If you want to automatically commit the updated flake.lock
