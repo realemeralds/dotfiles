@@ -9,4 +9,16 @@
     dates = "02:00";
     randomizedDelaySec = "45min";
   };
+
+  environment.etc."root_gitconfig" = {
+    target = "custom/root_gitconfig";
+    text = ''
+      [safe]
+        directory = /home/filo/dotfiles/nixos
+    '';
+  };
+
+  system.activationScripts.rootGitConfig = ''
+    ln -sf /etc/custom/root_gitconfig /root/.gitconfig
+  '';
 }
