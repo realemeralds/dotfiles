@@ -43,8 +43,7 @@
       alias \
       neofetch="neowofetch" \
       xclip="xclip -selection clipboard" \
-      fzd="fzf" \
-      fzf='fzf --preview="bat --color=always {}"' \
+      fp='fzf --preview="bat --color=always {}"' \
       fo='code ''$(fzf --preview="bat --color=always {}")' \
       c="clear" \
       cat="bat" \
