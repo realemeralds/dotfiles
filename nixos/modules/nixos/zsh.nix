@@ -44,6 +44,8 @@
       \
       neofetch="neowofetch" \
       xclip="xclip -selection clipboard" \
+      fzp="fzf --preview="bat --color=always {}" \
+      fzo="code $(fzf --preview="bat --color=always {})" \
       c="clear" \
       cat="bat" \
       l="ls -lh --color=auto --group-directories-first" \
