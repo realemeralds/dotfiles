@@ -68,6 +68,8 @@
           fff "$@"
           cd "$(cat "''${XDG_CACHE_HOME:=''${HOME}/.cache}/fff/.fff_d")"
       }
+
+      export FFF_KEY_GO_TRASH="off"
     '';
     histSize = 10000;
 
