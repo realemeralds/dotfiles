@@ -43,8 +43,8 @@
       alias \
       neofetch="neowofetch" \
       xclip="xclip -selection clipboard" \
-      fp="fzf --preview='bat --color=always {}'" \
-      fo="code ''$(fzf --preview='bat --color=always {}')" \
+      # fp="fzf --preview='bat --color=always {}'" \
+      # fo="code ''$(fzf --preview='bat --color=always {}')" \
       c="clear" \
       cat="bat" \
       l="ls -lh --color=auto --group-directories-first" \
@@ -62,10 +62,12 @@
       freec="free -h | bat -l cpuinfo -p" \
       sensors="sensors | bat -l cpuinfo -p" \
       exiftool="/usr/bin/vendor_perl/exiftool" \
+
       bathelp='bat --plain --language=help'
       help() {
           "$@" --help 2>&1 | bathelp
       }
+
       # https://github.com/dylanaraps/fff#cd-on-exit
       f() {
           fff "$@"
