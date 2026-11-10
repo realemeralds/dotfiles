@@ -29,11 +29,27 @@ with lib.hm.gvariant;
       ];
     };
 
+    "com/github/FontManager/FontViewer" = {
+      window-size = mkTuple [
+        675
+        500
+      ];
+    };
+
     "com/usebottles/bottles" = {
       show-sandbox-warning = false;
       startup-view = "page_list";
       window-height = 640;
       window-width = 880;
+    };
+
+    "org/blueman/general" = {
+      window-properties = [
+        591
+        771
+        1183
+        269
+      ];
     };
 
     "org/cinnamon" = {
@@ -42,18 +58,19 @@ with lib.hm.gvariant;
       enabled-applets = [
         "panel1:left:0:menu@cinnamon.org:0"
         "panel1:center:0:grouped-window-list@cinnamon.org:2"
-        "panel1:right:4:notifications@cinnamon.org:5"
+        "panel1:right:2:notifications@cinnamon.org:5"
         "panel2:center:0:calendar@cinnamon.org:13"
-        "panel1:right:8:cornerbar@cinnamon.org:14"
+        "panel1:right:4:cornerbar@cinnamon.org:14"
         "panel2:left:0:workspace-switcher@cinnamon.org:15"
-        "panel1:right:6:trash@cinnamon.org:17"
-        "panel1:right:3:nightlight@cinnamon.org:18"
-        "panel2:right:1:power@cinnamon.org:22"
-        "panel2:right:0:network@cinnamon.org:23"
+        "panel1:right:3:trash@cinnamon.org:17"
+        "panel1:right:1:nightlight@cinnamon.org:18"
+        "panel2:right:3:power@cinnamon.org:22"
+        "panel2:right:1:network@cinnamon.org:23"
+        "panel2:right:0:sound@cinnamon.org:24"
       ];
       enabled-desklets = [ ];
       enabled-extensions = [ "transparent-panels@germanfr" ];
-      next-applet-id = 24;
+      next-applet-id = 25;
       panel-edit-mode = false;
       panel-zone-icon-sizes = "[{\"panelId\":1,\"left\":0,\"center\":0,\"right\":24},{\"left\":0,\"center\":0,\"right\":0,\"panelId\":2}]";
       panel-zone-symbolic-icon-sizes = "[{\"panelId\": 1, \"left\": 28, \"center\": 28, \"right\": 16}, {\"left\": 28, \"center\": 29, \"right\": 16, \"panelId\": 2}]";
@@ -101,13 +118,8 @@ with lib.hm.gvariant;
       exec-arg = "--";
     };
 
-    # Nix store is needed for greeter.
     "org/cinnamon/desktop/background" = {
-      picture-uri =
-        let
-          background = ../../../configs/backgrounds/complete-8.png;
-        in
-        "file://${background}";
+      picture-uri = "file:///nix/store/ard6i0gl3zb26qjp32204hndbjqr7hz2-complete-8.png";
     };
 
     "org/cinnamon/desktop/background/slideshow" = {
@@ -125,10 +137,12 @@ with lib.hm.gvariant;
     };
 
     "org/cinnamon/desktop/interface" = {
+      clock-show-seconds = false;
       cursor-blink-time = 1200;
       cursor-size = 24;
       cursor-theme = "Bibata-Modern-Classic";
       font-name = "Iosevka Nerd Font 10";
+      gtk-enable-primary-paste = false;
       gtk-theme = "Mint-Y-Dark-Aqua";
       icon-theme = "Papirus-Dark";
       text-scaling-factor = 1.1;
@@ -156,6 +170,7 @@ with lib.hm.gvariant;
 
     "org/cinnamon/desktop/peripherals/keyboard" = {
       delay = mkUint32 500;
+      numlock-state = false;
       repeat-interval = mkUint32 30;
     };
 
@@ -213,7 +228,13 @@ with lib.hm.gvariant;
     };
 
     "org/cinnamon/settings-daemon/plugins/power" = {
+      idle-dim-time = 600;
+      lid-close-ac-action = "suspend";
+      lid-close-battery-action = "suspend";
       sleep-display-ac = 7200;
+      sleep-display-battery = 1800;
+      sleep-inactive-ac-timeout = 0;
+      sleep-inactive-battery-timeout = 0;
     };
 
     "org/cinnamon/settings-daemon/plugins/xsettings" = {
@@ -255,6 +276,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       can-change-accels = false;
+      clock-format = "24h";
       clock-show-date = false;
       clock-show-seconds = false;
       cursor-blink = true;
@@ -267,7 +289,7 @@ with lib.hm.gvariant;
       font-name = "Iosevka Nerd Font 10";
       gtk-color-palette = "black:white:gray50:red:purple:blue:light blue:green:yellow:orange:lavender:brown:goldenrod4:dodger blue:pink:light green:gray10:gray30:gray75:gray90";
       gtk-color-scheme = "";
-      gtk-enable-primary-paste = true;
+      gtk-enable-primary-paste = false;
       gtk-im-module = "";
       gtk-im-preedit-style = "callback";
       gtk-im-status-style = "callback";
@@ -281,7 +303,7 @@ with lib.hm.gvariant;
       menus-have-tearoff = false;
       monospace-font-name = "CaskaydiaMono Nerd Font Mono 10";
       scaling-factor = mkUint32 0;
-      text-scaling-factor = 1.0;
+      text-scaling-factor = 1.1;
       toolbar-detachable = false;
       toolbar-icons-size = "large";
       toolbar-style = "both-horiz";
@@ -610,6 +632,10 @@ with lib.hm.gvariant;
         "terminal"
         "webalbums"
       ];
+    };
+
+    "org/x/viewer/window" = {
+      maximized = true;
     };
 
     "org/x/warpinator/preferences" = {
