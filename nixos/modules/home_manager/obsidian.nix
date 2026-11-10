@@ -297,10 +297,14 @@ in
   };
 
   home.file = {
-    "obsidian_community_plugins" = {
+    "obsidian_community_plugins_folder" = {
       recursive = true;
       source = obsidian_path + "/plugins";
       target = "${obsidian_vault}/.obsidian/plugins";
+    };
+    "obsidian_community_plugins" = {
+      source = obsidian_path + "/community-plugins.json";
+      target = "${obsidian_vault}/.obsidian/community-plugins.json";
     };
     "obsidian_workspace" = {
       source = obsidian_path + "/workspace.json";
