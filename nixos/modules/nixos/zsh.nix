@@ -43,9 +43,8 @@
       alias \
       neofetch="neowofetch" \
       xclip="xclip -selection clipboard" \
-      fzd="fzf" \
-      fzo="code $(fzf --preview='bat --color=always {}')" \
-      fzf="fzf --preview='bat --color=always {}'" \
+      fp="fzf --preview='bat --color=always {}'" \
+      fo="code $(fzf --preview='bat --color=always {}')" \
       c="clear" \
       cat="bat" \
       l="ls -lh --color=auto --group-directories-first" \
