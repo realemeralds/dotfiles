@@ -37,7 +37,7 @@
       eval "$(direnv hook zsh)"
 
       # fzf integration: https://wiki.nixos.org/wiki/Fzf
-      eval "$(fzf --zsh)"
+      eval "$(fzd --zsh)"
 
       # Aliases (https://github.com/BreadOnPenguins/dots/blob/master/.config/shell/alias)
       alias \
