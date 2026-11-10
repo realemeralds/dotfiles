@@ -36,13 +36,12 @@
       # Direnv hook: https://direnv.net/docs/hook.html
       eval "$(direnv hook zsh)"
 
-      # Aliases
+      # Aliases (https://github.com/BreadOnPenguins/dots/blob/master/.config/shell/alias)
       alias \
       \
       neofetch="neowofetch" \
       xclip="xclip -selection clipboard" \
       c="clear" \
-      f="fff" \
       cat="bat" \
       l="ls -lh --color=auto --group-directories-first" \
       ls="ls -h --color=auto --group-directories-first" \
@@ -63,6 +62,11 @@
       bathelp='bat --plain --language=help'
       help() {
           "$@" --help 2>&1 | bathelp
+      }
+      # https://github.com/dylanaraps/fff#cd-on-exit
+      f() {
+          fff "$@"
+          cd "$(cat "''${XDG_CACHE_HOME:=''${HOME}/.cache}/fff/.fff_d")"
       }
     '';
     histSize = 10000;
