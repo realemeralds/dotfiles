@@ -37,15 +37,15 @@
       eval "$(direnv hook zsh)"
 
       # fzf integration: https://wiki.nixos.org/wiki/Fzf
-      eval "$(fzd --zsh)"
+      eval "$(fzf --zsh)"
 
       # Aliases (https://github.com/BreadOnPenguins/dots/blob/master/.config/shell/alias)
       alias \
       neofetch="neowofetch" \
       xclip="xclip -selection clipboard" \
-      fzf="fzf --preview='bat --color=always {}'" \
       fzd="fzf" \
       fzo="code $(fzf --preview='bat --color=always {}')" \
+      fzf="fzf --preview='bat --color=always {}'" \
       c="clear" \
       cat="bat" \
       l="ls -lh --color=auto --group-directories-first" \
