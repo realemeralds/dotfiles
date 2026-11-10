@@ -18,6 +18,7 @@
     ../../modules/home_manager/kitty.nix
     ../../modules/home_manager/obsidian.nix
     ../../modules/home_manager/sxhkd.nix
+    ../../modules/home_manager/xdg.nix
     ../../modules/home_manager/zen.nix
   ];
 
