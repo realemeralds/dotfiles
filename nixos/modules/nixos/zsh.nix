@@ -47,7 +47,6 @@
       ls="ls -h --color=auto --group-directories-first" \
       la="ls -lah --color=auto --group-directories-first" \
       grep="grep --color=auto" \
-      fk="sudo !!" \
       mv="mv -i" \
       rm="rm -Iv" \
       df="df -h" \
@@ -67,6 +66,15 @@
       f() {
           fff "$@"
           cd "$(cat "''${XDG_CACHE_HOME:=''${HOME}/.cache}/fff/.fff_d")"
+      }
+
+      # From Gemini
+      fk() {
+          if (( $#history )); then
+              eval "sudo $history[$((HISTCMD-1))]"
+          else
+              echo "No history found"
+          fi
       }
 
       export FFF_KEY_GO_TRASH="off"
