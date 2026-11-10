@@ -22,6 +22,8 @@
     gdb
     easyeffects
     bat
+    bat-extras.batman
     xclip
+    fff
   ];
 }

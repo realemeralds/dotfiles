@@ -36,9 +36,34 @@
       # Direnv hook: https://direnv.net/docs/hook.html
       eval "$(direnv hook zsh)"
 
-      # Neofetch alias
-      alias neofetch="neowofetch"
-      alias xclip="xclip -selection clipboard"
+      # Aliases
+      alias \
+      \
+      neofetch="neowofetch" \
+      xclip="xclip -selection clipboard" \
+      c="clear" \
+      f="fff" \
+      cat="bat" \
+      l="ls -lh --color=auto --group-directories-first" \
+      ls="ls -h --color=auto --group-directories-first" \
+      la="ls -lah --color=auto --group-directories-first" \
+      grep="grep --color=auto" \
+      fk="sudo !!" \
+      mv="mv -i" \
+      rm="rm -Iv" \
+      df="df -h" \
+      du="du -h -d 1" \
+      k="killall" \
+      p="ps aux | grep $1" \
+      man="batman" \
+      lsbc="lsblk | bat -l conf -p" \
+      freec="free -h | bat -l cpuinfo -p" \
+      sensors="sensors | bat -l cpuinfo -p" \
+      exiftool="/usr/bin/vendor_perl/exiftool" \
+      bathelp='bat --plain --language=help'
+      help() {
+          "$@" --help 2>&1 | bathelp
+      }
     '';
     histSize = 10000;
 
