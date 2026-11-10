@@ -118,6 +118,66 @@
     "direction": "horizontal",
     "width": 300
   },
+  "right": {
+    "id": "dea07fcc77e6be9f",
+    "type": "split",
+    "children": [
+      {
+        "id": "741cb0cf4b040d53",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "031f95edc521a2ce",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "77270a939ff6e97a",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a30e8ca6d2396503",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "48fd2f1a37f00237",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "d6c3e6296b5b7ebe",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
   "left-ribbon": {
     "hiddenItems": {
       "switcher:Open quick switcher": false,
