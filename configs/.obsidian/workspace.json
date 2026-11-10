@@ -176,6 +176,7 @@
       }
     ],
     "direction": "horizontal",
+    "collapsed": true,
     "width": 300
   },
   "left-ribbon": {
