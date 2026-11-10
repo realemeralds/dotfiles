@@ -41,10 +41,10 @@
 
       # Aliases (https://github.com/BreadOnPenguins/dots/blob/master/.config/shell/alias)
       alias \
-      \
       neofetch="neowofetch" \
       xclip="xclip -selection clipboard" \
-      fzp="fzf --preview='bat --color=always {}'" \
+      fzf="fzf --preview='bat --color=always {}'" \
+      fzd="fzf" \
       fzo="code $(fzf --preview='bat --color=always {}')" \
       c="clear" \
       cat="bat" \
