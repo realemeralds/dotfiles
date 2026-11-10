@@ -29,11 +29,11 @@ with lib.hm.gvariant;
 
   dconf.settings = {
     "com/github/FontManager/FontManager" = {
-      browse-pane-position = 54.94736842105263;
+      browse-pane-position = 54.947368;
       browse-preview-visible = true;
-      content-size = 39.96937212863706;
+      content-size = 39.969372;
       mode = "browse";
-      sidebar-size = 32.94736842105263;
+      sidebar-size = 32.947368;
       window-size = mkTuple [
         950
         700
@@ -45,6 +45,12 @@ with lib.hm.gvariant;
       startup-view = "page_list";
       window-height = 640;
       window-width = 880;
+    };
+
+    "net/nokyan/Resources" = {
+      is-maximized = false;
+      window-height = 900;
+      window-width = 1024;
     };
 
     "org/cinnamon" = {
@@ -60,13 +66,14 @@ with lib.hm.gvariant;
         "panel1:right:4:trash@cinnamon.org:17"
         "panel1:right:1:nightlight@cinnamon.org:18"
         "panel1:right:0:sound-switcher@irishbruse:21"
+        "panel2:right:0:sound@cinnamon.org:22"
       ];
       enabled-desklets = [ ];
       enabled-extensions = [ "transparent-panels@germanfr" ];
-      next-applet-id = 22;
+      next-applet-id = 23;
       panel-edit-mode = false;
       panel-zone-icon-sizes = "[{\"panelId\":1,\"left\":0,\"center\":0,\"right\":24},{\"left\":0,\"center\":0,\"right\":0,\"panelId\":2}]";
-      panel-zone-symbolic-icon-sizes = "[{\"panelId\": 1, \"left\": 28, \"center\": 28, \"right\": 16}, {\"left\": 28, \"center\": 29, \"right\": 28, \"panelId\": 2}]";
+      panel-zone-symbolic-icon-sizes = "[{\"panelId\": 1, \"left\": 28, \"center\": 28, \"right\": 16}, {\"left\": 28, \"center\": 29, \"right\": 20, \"panelId\": 2}]";
       panel-zone-text-sizes = "[{\"panelId\": 1, \"left\": 0, \"center\": 0, \"right\": 0}, {\"left\": 0.0, \"center\": 11.0, \"right\": 0, \"panelId\": 2}]";
       panels-autohide = [
         "1:false"
@@ -130,6 +137,7 @@ with lib.hm.gvariant;
     };
 
     "org/cinnamon/desktop/interface" = {
+      clock-use-24h = true;
       cursor-blink-time = 1200;
       cursor-size = 24;
       cursor-theme = "Bibata-Modern-Classic";
@@ -157,6 +165,10 @@ with lib.hm.gvariant;
 
     "org/cinnamon/desktop/media-handling" = {
       autorun-never = false;
+    };
+
+    "org/cinnamon/desktop/notifications" = {
+      notification-duration = 4;
     };
 
     "org/cinnamon/desktop/peripherals/keyboard" = {
@@ -260,6 +272,7 @@ with lib.hm.gvariant;
 
     "org/gnome/desktop/interface" = {
       can-change-accels = false;
+      clock-format = "24h";
       clock-show-date = false;
       clock-show-seconds = false;
       cursor-blink = true;
@@ -618,11 +631,16 @@ with lib.hm.gvariant;
       ];
     };
 
+    "org/x/viewer/window" = {
+      maximized = true;
+    };
+
     "org/x/warpinator/preferences" = {
       ask-for-send-permission = true;
       autostart = false;
       connect-id = "NIXOS-778E81C7CA2BDB3BD608";
       no-overwrite = true;
     };
+
   };
 }
