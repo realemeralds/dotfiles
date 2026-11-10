@@ -38,6 +38,7 @@
 
       # Neofetch alias
       alias neofetch="neowofetch"
+      alias xclip="xclip -selection clipboard"
     '';
     histSize = 10000;
 

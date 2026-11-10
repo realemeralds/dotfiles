@@ -21,5 +21,7 @@
     gcc
     gdb
     easyeffects
+    bat
+    xclip
   ];
 }
